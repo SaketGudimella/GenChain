@@ -20,16 +20,7 @@ The project aims to streamline the management of Non-Fungible Tokens (NFTs) by i
 
 ## Features
 
-- **NFT Management:** Seamlessly handles NFTs across different blockchains.
-- **Minting:** Allows users to create new NFTs with ease.
-- **Transferring:** Enables secure ownership transfer of NFTs.
-- **Querying:** Provides easy access to NFT information and metadata.
-- **User Interface:** Offers an intuitive platform for interaction and trading.
-- **Integration:** Works seamlessly with "MyNFT" and other smart contracts.
-- **Chatbot Interaction:** Employs natural language control for enhanced user experience.
-- **Web Interface:** Accessible across devices for convenience.
-- **Security:** Prioritizes asset and transaction safety for users' peace of mind.
-- **Innovation:** Adapts to emerging trends in the NFT ecosystem.
+
 
 ## How We Built It
 
