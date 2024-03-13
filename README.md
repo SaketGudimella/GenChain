@@ -46,7 +46,7 @@ The project aims to streamline the management of Non-Fungible Tokens (NFTs) by i
 
 ## Project Architecture
 
-![Project Architecture] ![PHOTO-2024-03-13-16-01-12](https://github.com/SaketGudimella/GenChain/assets/106355242/bee8ced9-17c2-4eab-a843-73bb18deae27)
+![PHOTO-2024-03-13-16-01-12](https://github.com/SaketGudimella/GenChain/assets/106355242/bee8ced9-17c2-4eab-a843-73bb18deae27)
 
 ![PHOTO-2024-03-13-16-12-11](https://github.com/SaketGudimella/GenChain/assets/106355242/985e2425-96c2-44ae-b360-6b0d3c1eda34)
 
