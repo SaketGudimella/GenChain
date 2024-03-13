@@ -68,3 +68,5 @@ The project aims to streamline the management of Non-Fungible Tokens (NFTs) by i
 
 
 *This project was submitted as part of [Layer 2.0] on [12/03/24 - 13/03/23].*
+
+**Note:** You can clone the repository and run the project locally to avoid paying any Gas Fee Subsidies. While hosting is not a problem, for each transaction, you have to pay gas fees. Downloading the repository locally allows you to mint your NFTs for free.
