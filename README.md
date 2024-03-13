@@ -13,7 +13,7 @@ The project aims to streamline the management of Non-Fungible Tokens (NFTs) by i
 - **Blockchain Integration:** Ethereum
 - **Frontend Development:** React.js
 - **User Interface Design:** Tailwind CSS
-- **Chatbot Integration:** Voiceflow
+- **Chatbot Integration:** Voiceflow and Stable Diffusion API
 - **Wallet Integration:** Metamask
 - **Database Management:** Pinata
 - **Deployment:** Vercel
