@@ -47,9 +47,10 @@ function App() {
   return (
     <>
       <div className="flex flex-col gap-5">
-        <p className="text-xl">
-          Account : {account ? account : "Not connected"}
-        </p>
+        <div>
+          <p className="text-xl font-bold">Upload your Image</p>
+          <p>{!account?"Connect your metamask account to upload your Image":"Upload Images to your metamask account"}</p>
+        </div>
         <div className="items-center justify-center flex flex-col">
           <FileUpload
             account={account}

@@ -7,7 +7,7 @@ const Display = ({ contract, account }) => {
   
   const getdata = async () => {
     let dataArray;
-    const Otheraddress = document.querySelector(".address").value;
+    const Otheraddress = document.querySelector(".tmb")?.value;
     try {
       if (Otheraddress) {
         dataArray = await contract.display(Otheraddress);
@@ -48,7 +48,8 @@ const Display = ({ contract, account }) => {
       <input
         type="text"
         placeholder="Enter Address"
-        className="rounded-md p-2 address w-1/2 mx-auto text-center"
+        className="hidden tmb"
+        hidden
       />
       <div className="flex justify-center">
       <button className="bg-blue-500 p-3 rounded-md text-white font-medium" onClick={getdata}>

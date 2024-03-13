@@ -50,12 +50,13 @@ const FileUpload = ({ contract, account, provider }) => {
 
   return (
     <div className="top">
-      <div className="flex flex-col p-3 bg-white rounded-md gap-3">
+      <div className="flex flex-col p-3 bg-gradient-to-br from-white to-blue-200 bg-gradient-45 rounded-md gap-3">
         <button className="choose" onClick={() => inputRef.current.click()}> 
           Choose Image
         </button>
         <input
             type="file"
+            accept="image/*"
             multiple
             hidden
             onChange={retrieveFile}
@@ -70,7 +71,7 @@ const FileUpload = ({ contract, account, provider }) => {
           disabled={!file}
           onClick={handleSubmit}
         >
-          Upload File
+          Upload Image
         </button>
         </div>
       </div>

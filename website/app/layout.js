@@ -17,7 +17,7 @@ export default function RootLayout({ children }) {
           <div className="flex-0">
             <Nav />
           </div>
-          <div className="flex-1">{children}</div>
+          <div className="flex-1 mt-20 mx-3">{children}</div>
         </div>
       </body>
     </html>
