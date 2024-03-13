@@ -9,6 +9,6 @@ module.exports = {
     },
   },
   paths: {
-    artifacts: "../website/plublic/artifacts",
+    artifacts: "../website/hardhat/artifacts",
   },
 };
