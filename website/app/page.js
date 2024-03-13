@@ -51,7 +51,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="flex flex-col  h-screen">
+      <div className="flex flex-col  h-[calc(100vh-4.5rem)]">
         <span id="services" className="translate-y-10"></span>
         <h1 className="text-5xl font-bold w-full text-center">Our services</h1>
         <div className="flex gap-3 items-center justify-center mx-40 mt-20">
