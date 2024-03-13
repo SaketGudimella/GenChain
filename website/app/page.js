@@ -5,19 +5,17 @@ import { useEffect } from "react";
 
 export default function Home() {
   function a(d, t) {
-    var v = d.createElement(t),
-      s = d.getElementsByTagName(t)[0];
-    v.onload = function () {
-      window.voiceflow.chat.load({
-        verify: { projectID: "65f079060bc14fa0a78c2c4f" },
-        url: "https://general-runtime.voiceflow.com",
-        versionID: "production",
-      });
-    };
-    v.src = "https://cdn.voiceflow.com/widget/bundle.mjs";
-    v.type = "text/javascript";
-    s.parentNode.insertBefore(v, s);
+      var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+      v.onload = function() {
+        window.voiceflow.chat.load({
+          verify: { projectID: '65f079060bc14fa0a78c2c4f' },
+          url: 'https://general-runtime.voiceflow.com',
+          versionID: 'production'
+        });
+      }
+      v.src = "https://cdn.voiceflow.com/widget/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
   }
+    
   useEffect(() => {
     a(document, "script");
   }, []);
