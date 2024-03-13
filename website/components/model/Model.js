@@ -1,5 +1,7 @@
+"use client"
+
 import { useEffect } from "react";
-import "./Modal.css";
+import "./Model.css";
 const Modal = ({ setModalOpen, contract }) => {
   const sharing = async () => {
     const address = document.querySelector(".address").value;

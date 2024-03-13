@@ -1,7 +1,10 @@
+"use client"
+
 import { useState } from "react";
-import "./Display.css";
+
 const Display = ({ contract, account }) => {
   const [data, setData] = useState("");
+  
   const getdata = async () => {
     let dataArray;
     const Otheraddress = document.querySelector(".address").value;
@@ -15,22 +18,21 @@ const Display = ({ contract, account }) => {
     } catch (e) {
       alert("You don't have access");
     }
+    
     const isEmpty = Object.keys(dataArray).length === 0;
 
     if (!isEmpty) {
       const str = dataArray.toString();
       const str_array = str.split(",");
-      // console.log(str);
-      // console.log(str_array);
       const images = str_array.map((item, i) => {
         return (
-          <a href={item} key={i} target="_blank">
+          <a href={item} key={i} target="_blank" className="flex-shrink-0">
             <img
               key={i}
-              src={`https://gateway.pinata.cloud/ipfs/${item.substring(6)}`}
+              src={`https:${item.substring(6)}`}
               alt="new"
-              className="image-list"
-            ></img>
+              className="h-48 object-contain"
+            />
           </a>
         );
       });
@@ -39,18 +41,23 @@ const Display = ({ contract, account }) => {
       alert("No image to display");
     }
   };
+  
   return (
-    <>
-      <div className="image-list">{data}</div>
+    <div className="flex flex-col gap-3 mb-10">
+      <div className="flex flex-wrap gap-2 mx-10">{data}</div>
       <input
         type="text"
         placeholder="Enter Address"
-        className="address"
-      ></input>
-      <button className="center button" onClick={getdata}>
+        className="rounded-md p-2 address w-1/2 mx-auto text-center"
+      />
+      <div className="flex justify-center">
+      <button className="bg-blue-500 p-3 rounded-md text-white font-medium" onClick={getdata}>
         Get Data
       </button>
-    </>
+
+      </div>
+    </div>
   );
 };
+
 export default Display;

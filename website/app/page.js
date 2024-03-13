@@ -7,7 +7,7 @@ export default function Home() {
       <div className="flex flex-col py-10 h-screen">
         <div className="flex">
           <div className="">
-            <Image src="/hero.png" alt="Hero" width={500} height={500} />
+            <Image src="/hero.png" alt="Hero" width={500} height={500} className="[filter:drop-shadow(0px_4px_8px_rgba(0,_0,_0,_0.5))]" />
           </div>
           <div className="">
             <h1 className="text-5xl font-bold">Welcome to GenChain</h1>
@@ -18,7 +18,7 @@ export default function Home() {
         </div>
       </div>
       <div className="flex flex-col py-10 h-screen">
-        <h1 className="text-5xl font-bold">Our services</h1>
+        <h1 className="text-5xl font-bold" id="services">Our services</h1>
         <div className="flex gap-3 items-center justify-center mx-40 mt-20">
           <div>
             <Link href="/minting">

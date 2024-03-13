@@ -1,16 +1,19 @@
-'use client'
+"use client";
 
+import Upload from "../../hardhat/artifacts/contracts/Upload.sol/Upload.json";
+import { useState, useEffect } from "react";
 import { ethers } from "ethers";
-import { useEffect, useState } from "react";
+import Modal from "@/components/model/Model";
+import FileUpload from "@/components/fileupload/FileUpload";
+import Display from "@/components/display/display";
 
-export default function Home() {
+function App() {
   const [account, setAccount] = useState("");
   const [contract, setContract] = useState(null);
   const [provider, setProvider] = useState(null);
   const [modalOpen, setModalOpen] = useState(false);
 
   useEffect(() => {
-    //const provider = new ethers.providers.Web3Provider(window.ethereum);
     const provider = new ethers.providers.Web3Provider(window.ethereum);
 
     const loadProvider = async () => {
@@ -26,13 +29,13 @@ export default function Home() {
         const signer = provider.getSigner();
         const address = await signer.getAddress();
         setAccount(address);
-        let contractAddress = "0x5FbDB2315678afecb367f032d93F642f64180aa3";
+        let contractAddress = "0x610178dA211FEF7D417bC0e6FeD39F05609AD788";
+
         const contract = new ethers.Contract(
           contractAddress,
           Upload.abi,
           signer
         );
-        //console.log(contract);
         setContract(contract);
         setProvider(provider);
       } else {
@@ -41,5 +44,25 @@ export default function Home() {
     };
     provider && loadProvider();
   }, []);
-  return;
+  return (
+    <>
+      <div className="flex flex-col gap-5">
+        <p className="text-xl">
+          Account : {account ? account : "Not connected"}
+        </p>
+        <div className="items-center justify-center flex flex-col">
+          <FileUpload
+            account={account}
+            provider={provider}
+            contract={contract}
+          ></FileUpload>
+        </div>
+        <div className="items-center justify-center flex flex-col">
+          <Display contract={contract} account={account}></Display>
+        </div>
+      </div>
+    </>
+  );
 }
+
+export default App;
