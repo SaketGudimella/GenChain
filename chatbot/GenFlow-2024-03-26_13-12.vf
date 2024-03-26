@@ -1,0 +1,5523 @@
+{
+  "version": {
+    "name": "Initial Version",
+    "topics": [
+      {
+        "type": "DIAGRAM",
+        "sourceID": "645d72103c0ff6475d60535e"
+      }
+    ],
+    "_version": 7,
+    "creatorID": 914692,
+    "prototype": {
+      "type": "chat",
+      "data": {
+        "name": "GenFlow",
+        "locales": [
+          "en-US"
+        ]
+      },
+      "model": {
+        "intents": [],
+        "slots": [
+          {
+            "key": "65f112f705692a7e68880105",
+            "name": "Final_Image",
+            "color": "#56B365",
+            "inputs": [],
+            "type": {
+              "value": "VF.CURRENCY"
+            }
+          },
+          {
+            "key": "65f09efc1c55855d4fdae7c0",
+            "name": "Text_Prompt_for_Image",
+            "color": "#515A63",
+            "inputs": [],
+            "type": {
+              "value": "VF.NAME"
+            }
+          },
+          {
+            "key": "65f096661c55855d4fdae722",
+            "name": "NFT_Creation_Exist",
+            "color": "#515A63",
+            "inputs": [],
+            "type": {
+              "value": "VF.KEY_PHRASE"
+            }
+          },
+          {
+            "key": "65f0926b1c55855d4fdae6e1",
+            "name": "NFT_Description",
+            "color": "#5B9FD7",
+            "inputs": [],
+            "type": {
+              "value": "VF.KEY_PHRASE"
+            }
+          },
+          {
+            "key": "65f090b11c55855d4fdae6dc",
+            "name": "NFT_Name",
+            "color": "#CB627B",
+            "inputs": [],
+            "type": {
+              "value": "VF.NAME"
+            }
+          },
+          {
+            "key": "65f08d37e3d2189a452986e7",
+            "name": "NFT_Creation",
+            "color": "#56B365",
+            "inputs": [],
+            "type": {
+              "value": "VF.NAME"
+            }
+          },
+          {
+            "key": "65f08a881c55855d4fdae6c7",
+            "name": "Wallet_Address",
+            "color": "#5B9FD7",
+            "inputs": [],
+            "type": {
+              "value": "VF.KEY_PHRASE"
+            }
+          },
+          {
+            "key": "65f0884b1c55855d4fdae6a4",
+            "name": "Name",
+            "color": "#5B9FD7",
+            "inputs": [
+              "Emily,Em,Emma,Emilia"
+            ],
+            "type": {
+              "value": "Custom"
+            }
+          }
+        ]
+      },
+      "context": {
+        "stack": [
+          {
+            "programID": "645d72103c0ff6475d60535e",
+            "storage": {},
+            "variables": {},
+            "diagramID": "645d72103c0ff6475d60535e"
+          }
+        ],
+        "variables": {}
+      },
+      "surveyorContext": {
+        "slotsMap": {
+          "65f112f705692a7e68880105": {
+            "key": "65f112f705692a7e68880105",
+            "name": "Final_Image",
+            "color": "#56B365",
+            "inputs": [],
+            "type": {
+              "value": "VF.CURRENCY"
+            }
+          },
+          "65f09efc1c55855d4fdae7c0": {
+            "key": "65f09efc1c55855d4fdae7c0",
+            "name": "Text_Prompt_for_Image",
+            "color": "#515A63",
+            "inputs": [],
+            "type": {
+              "value": "VF.NAME"
+            }
+          },
+          "65f096661c55855d4fdae722": {
+            "key": "65f096661c55855d4fdae722",
+            "name": "NFT_Creation_Exist",
+            "color": "#515A63",
+            "inputs": [],
+            "type": {
+              "value": "VF.KEY_PHRASE"
+            }
+          },
+          "65f0926b1c55855d4fdae6e1": {
+            "key": "65f0926b1c55855d4fdae6e1",
+            "name": "NFT_Description",
+            "color": "#5B9FD7",
+            "inputs": [],
+            "type": {
+              "value": "VF.KEY_PHRASE"
+            }
+          },
+          "65f090b11c55855d4fdae6dc": {
+            "key": "65f090b11c55855d4fdae6dc",
+            "name": "NFT_Name",
+            "color": "#CB627B",
+            "inputs": [],
+            "type": {
+              "value": "VF.NAME"
+            }
+          },
+          "65f08d37e3d2189a452986e7": {
+            "key": "65f08d37e3d2189a452986e7",
+            "name": "NFT_Creation",
+            "color": "#56B365",
+            "inputs": [],
+            "type": {
+              "value": "VF.NAME"
+            }
+          },
+          "65f08a881c55855d4fdae6c7": {
+            "key": "65f08a881c55855d4fdae6c7",
+            "name": "Wallet_Address",
+            "color": "#5B9FD7",
+            "inputs": [],
+            "type": {
+              "value": "VF.KEY_PHRASE"
+            }
+          },
+          "65f0884b1c55855d4fdae6a4": {
+            "key": "65f0884b1c55855d4fdae6a4",
+            "name": "Name",
+            "color": "#5B9FD7",
+            "inputs": [
+              "Emily,Em,Emma,Emilia"
+            ],
+            "type": {
+              "value": "Custom"
+            }
+          }
+        },
+        "platform": "webchat",
+        "products": {},
+        "extraSlots": [],
+        "interfaces": [],
+        "permissions": [],
+        "extraIntents": [],
+        "usedEventsSet": [],
+        "usedIntentsSet": [],
+        "goToIntentsSet": [],
+        "usedFunctionsMap": {},
+        "cmsVariables": {
+          "Answer": {
+            "isSystem": false,
+            "defaultValue": "",
+            "datatype": "any",
+            "isArray": false
+          },
+          "ImageType": {
+            "isSystem": false,
+            "defaultValue": "",
+            "datatype": "any",
+            "isArray": false
+          },
+          "nvidia_api_key": {
+            "isSystem": false,
+            "defaultValue": "",
+            "datatype": "any",
+            "isArray": false
+          },
+          "Nvidia_SDXL_API": {
+            "isSystem": false,
+            "defaultValue": "",
+            "datatype": "any",
+            "isArray": false
+          },
+          "platform": {
+            "isSystem": true,
+            "defaultValue": ""
+          },
+          "locale": {
+            "isSystem": true,
+            "defaultValue": ""
+          },
+          "counter": {
+            "isSystem": false,
+            "defaultValue": "",
+            "datatype": "any",
+            "isArray": false
+          },
+          "sentiment": {
+            "isSystem": false,
+            "defaultValue": "",
+            "datatype": "any",
+            "isArray": false
+          },
+          "intent_confidence": {
+            "isSystem": true,
+            "defaultValue": ""
+          },
+          "last_response": {
+            "isSystem": true,
+            "defaultValue": ""
+          },
+          "last_event": {
+            "isSystem": true,
+            "defaultValue": ""
+          },
+          "last_utterance": {
+            "isSystem": true,
+            "defaultValue": ""
+          },
+          "vf_memory": {
+            "isSystem": true,
+            "defaultValue": ""
+          },
+          "sessions": {
+            "isSystem": true,
+            "defaultValue": ""
+          },
+          "user_id": {
+            "isSystem": true,
+            "defaultValue": ""
+          },
+          "timestamp": {
+            "isSystem": true,
+            "defaultValue": ""
+          }
+        }
+      },
+      "settings": {
+        "buttons": "stacked",
+        "layout": "text-and-dialog",
+        "buttonsOnly": true
+      },
+      "platform": "webchat"
+    },
+    "variables": [
+      "sessions",
+      "user_id",
+      "timestamp",
+      "platform",
+      "locale",
+      "counter",
+      "sentiment",
+      "intent_confidence",
+      "last_response",
+      "last_event",
+      "last_utterance",
+      "vf_memory",
+      "Nvidia_SDXL_API",
+      "nvidia_api_key",
+      "ImageType",
+      "Answer"
+    ],
+    "components": [
+      {
+        "type": "DIAGRAM",
+        "sourceID": "645d72103c0ff6475d605360"
+      }
+    ],
+    "manualSave": false,
+    "platformData": {
+      "slots": [
+        {
+          "key": "65f112f705692a7e68880105",
+          "name": "Final_Image",
+          "color": "#56B365",
+          "inputs": [],
+          "type": {
+            "value": "VF.CURRENCY"
+          }
+        },
+        {
+          "key": "65f09efc1c55855d4fdae7c0",
+          "name": "Text_Prompt_for_Image",
+          "color": "#515A63",
+          "inputs": [],
+          "type": {
+            "value": "VF.NAME"
+          }
+        },
+        {
+          "key": "65f096661c55855d4fdae722",
+          "name": "NFT_Creation_Exist",
+          "color": "#515A63",
+          "inputs": [],
+          "type": {
+            "value": "VF.KEY_PHRASE"
+          }
+        },
+        {
+          "key": "65f0926b1c55855d4fdae6e1",
+          "name": "NFT_Description",
+          "color": "#5B9FD7",
+          "inputs": [],
+          "type": {
+            "value": "VF.KEY_PHRASE"
+          }
+        },
+        {
+          "key": "65f090b11c55855d4fdae6dc",
+          "name": "NFT_Name",
+          "color": "#CB627B",
+          "inputs": [],
+          "type": {
+            "value": "VF.NAME"
+          }
+        },
+        {
+          "key": "65f08d37e3d2189a452986e7",
+          "name": "NFT_Creation",
+          "color": "#56B365",
+          "inputs": [],
+          "type": {
+            "value": "VF.NAME"
+          }
+        },
+        {
+          "key": "65f08a881c55855d4fdae6c7",
+          "name": "Wallet_Address",
+          "color": "#5B9FD7",
+          "inputs": [],
+          "type": {
+            "value": "VF.KEY_PHRASE"
+          }
+        },
+        {
+          "key": "65f0884b1c55855d4fdae6a4",
+          "name": "Name",
+          "color": "#5B9FD7",
+          "inputs": [
+            "Emily,Em,Emma,Emilia"
+          ],
+          "type": {
+            "value": "Custom"
+          }
+        }
+      ],
+      "intents": [
+        {
+          "key": "bzga3j4q",
+          "name": "Learn Button",
+          "slots": [],
+          "inputs": [
+            {
+              "text": "how do I add a choice to the canvas",
+              "slots": []
+            },
+            {
+              "text": "how do I use the buttons step",
+              "slots": []
+            },
+            {
+              "text": "buttons step help",
+              "slots": []
+            },
+            {
+              "text": "how to use choice",
+              "slots": []
+            },
+            {
+              "text": "how do I give the user a choice",
+              "slots": []
+            },
+            {
+              "text": "how to use button",
+              "slots": []
+            }
+          ],
+          "noteID": null
+        },
+        {
+          "key": "psac3o99",
+          "name": "Jump Here",
+          "slots": [],
+          "inputs": [
+            {
+              "text": "jump here",
+              "slots": []
+            },
+            {
+              "text": "jump there please",
+              "slots": []
+            },
+            {
+              "text": "jump intent",
+              "slots": []
+            },
+            {
+              "text": "jump there",
+              "slots": []
+            },
+            {
+              "text": "jump",
+              "slots": []
+            }
+          ],
+          "noteID": null
+        },
+        {
+          "key": "582pg3mye",
+          "name": "Learn Intents",
+          "slots": [],
+          "inputs": [
+            {
+              "text": "learn about intents please",
+              "slots": []
+            },
+            {
+              "text": "i want to learn about intents",
+              "slots": []
+            },
+            {
+              "text": "intent learn",
+              "slots": []
+            },
+            {
+              "text": "intents learn",
+              "slots": []
+            },
+            {
+              "text": "learn intents",
+              "slots": []
+            }
+          ],
+          "noteID": null
+        },
+        {
+          "key": "z8cn3985",
+          "name": "Tell me more",
+          "slots": [],
+          "inputs": [
+            {
+              "text": "What else can you tell me?",
+              "slots": []
+            },
+            {
+              "text": "Can you give me more information?",
+              "slots": []
+            },
+            {
+              "text": "Do you have anything else to add?",
+              "slots": []
+            },
+            {
+              "text": "What else do you know?",
+              "slots": []
+            },
+            {
+              "text": "Go on.",
+              "slots": []
+            }
+          ],
+          "noteID": null
+        },
+        {
+          "key": "a5uo39mw",
+          "name": "Launch Assistant",
+          "slots": [],
+          "inputs": [
+            {
+              "text": "Launch my assistant",
+              "slots": []
+            },
+            {
+              "text": "connect assistant to website",
+              "slots": []
+            },
+            {
+              "text": "launch assistant",
+              "slots": []
+            },
+            {
+              "text": "put assistant on website",
+              "slots": []
+            }
+          ],
+          "noteID": null
+        },
+        {
+          "key": "wb5tx3em8",
+          "name": "Response AI",
+          "slots": [],
+          "inputs": [
+            {
+              "text": "gpt response",
+              "slots": []
+            },
+            {
+              "text": "new response step",
+              "slots": []
+            },
+            {
+              "text": "response ai",
+              "slots": []
+            },
+            {
+              "text": "response",
+              "slots": []
+            }
+          ],
+          "noteID": null
+        },
+        {
+          "key": "re5xb3etn",
+          "name": "Set AI",
+          "slots": [],
+          "inputs": [
+            {
+              "text": "GPT set",
+              "slots": []
+            },
+            {
+              "text": "set step",
+              "slots": []
+            },
+            {
+              "text": "set ai",
+              "slots": []
+            },
+            {
+              "text": "set",
+              "slots": []
+            }
+          ],
+          "noteID": null
+        },
+        {
+          "key": "yvj733rd",
+          "name": "Learn Components",
+          "slots": [],
+          "inputs": [
+            {
+              "text": "Learn components",
+              "slots": []
+            },
+            {
+              "text": "What components can I learn?",
+              "slots": []
+            },
+            {
+              "text": "What components do I need to know?",
+              "slots": []
+            },
+            {
+              "text": "Teach me about components",
+              "slots": []
+            },
+            {
+              "text": "Show me components",
+              "slots": []
+            },
+            {
+              "text": "Tell me about components",
+              "slots": []
+            }
+          ],
+          "noteID": null
+        },
+        {
+          "key": "kvlc336b",
+          "name": "Learn Actions",
+          "slots": [],
+          "inputs": [
+            {
+              "text": "Learn Actions",
+              "slots": []
+            },
+            {
+              "text": "What Actions Can I Learn",
+              "slots": []
+            },
+            {
+              "text": "How Do I Learn Actions",
+              "slots": []
+            },
+            {
+              "text": "Teach me about Actions",
+              "slots": []
+            },
+            {
+              "text": "What Can I Do with Actions",
+              "slots": []
+            },
+            {
+              "text": "Show me How to Work with Actions",
+              "slots": []
+            }
+          ],
+          "noteID": null
+        },
+        {
+          "key": "sjcrv374u",
+          "name": "ChatGPT",
+          "slots": [],
+          "inputs": [
+            {
+              "text": "how do i use AI in my assistant",
+              "slots": []
+            },
+            {
+              "text": "how do i use gpt in my assistant",
+              "slots": []
+            },
+            {
+              "text": "How do I use chatgpt in my assistant",
+              "slots": []
+            },
+            {
+              "text": "how do I use AI in my assistant?",
+              "slots": []
+            },
+            {
+              "text": "how do I use GPT in my assistant?",
+              "slots": []
+            },
+            {
+              "text": "How do I use ChatGPT in my assistant?",
+              "slots": []
+            },
+            {
+              "text": "What is the quickest way to incorporate AI in my assistant?",
+              "slots": []
+            },
+            {
+              "text": "What is the best way to use GPT in my assistant?",
+              "slots": []
+            }
+          ],
+          "noteID": null
+        },
+        {
+          "key": "oag9e37z2",
+          "name": "Learn the basics",
+          "slots": [],
+          "inputs": [
+            {
+              "text": "Teach me the basics",
+              "slots": []
+            },
+            {
+              "text": "I want to learn the basics",
+              "slots": []
+            },
+            {
+              "text": "learn the basics",
+              "slots": []
+            }
+          ],
+          "noteID": null
+        },
+        {
+          "key": "6579c6bf984565862f64b783",
+          "name": "Yes",
+          "slots": [],
+          "inputs": [
+            {
+              "text": "sure",
+              "slots": []
+            },
+            {
+              "text": "certainly",
+              "slots": []
+            },
+            {
+              "text": "affirmative",
+              "slots": []
+            },
+            {
+              "text": "okay",
+              "slots": []
+            },
+            {
+              "text": "ok",
+              "slots": []
+            },
+            {
+              "text": "ya",
+              "slots": []
+            },
+            {
+              "text": "yep",
+              "slots": []
+            },
+            {
+              "text": "yup",
+              "slots": []
+            },
+            {
+              "text": "yea",
+              "slots": []
+            },
+            {
+              "text": "yes",
+              "slots": []
+            }
+          ],
+          "noteID": null
+        },
+        {
+          "key": "6579c778dd3cca0fe0e0b152",
+          "name": "No",
+          "slots": [],
+          "inputs": [
+            {
+              "text": "negative",
+              "slots": []
+            },
+            {
+              "text": "nevermind",
+              "slots": []
+            },
+            {
+              "text": "not",
+              "slots": []
+            },
+            {
+              "text": "no thanks",
+              "slots": []
+            },
+            {
+              "text": "no way",
+              "slots": []
+            },
+            {
+              "text": "not now",
+              "slots": []
+            },
+            {
+              "text": "nah",
+              "slots": []
+            },
+            {
+              "text": "nay",
+              "slots": []
+            },
+            {
+              "text": "nope",
+              "slots": []
+            },
+            {
+              "text": "no",
+              "slots": []
+            }
+          ],
+          "noteID": null
+        },
+        {
+          "key": "None",
+          "name": "None",
+          "slots": [],
+          "inputs": [],
+          "noteID": null
+        }
+      ],
+      "settings": {
+        "restart": true,
+        "repeat": 100,
+        "locales": [
+          "en-US"
+        ],
+        "defaultVoice": "Alexa"
+      },
+      "publishing": {
+        "avatar": "https://cdn.voiceflow.com/assets/logo.png",
+        "color": "#2E7FF1",
+        "description": "Our virtual assistant is here to help you.",
+        "image": "https://cdn.voiceflow.com/assets/logo.png",
+        "persistence": "localStorage",
+        "position": "right",
+        "spacing": {
+          "side": 24,
+          "bottom": 24
+        },
+        "title": "GenFlow",
+        "watermark": true,
+        "launcher": ""
+      },
+      "platform": "webchat"
+    },
+    "canvasTemplates": [
+      {
+        "id": "241hk37ge",
+        "name": "API Call Example",
+        "color": null,
+        "nodeIDs": [
+          "645d80c1f245951e8730bed8",
+          "645d80c1f245951e8730beda",
+          "645d80c1f245951e8730bedc",
+          "645d80c1f245951e8730bede"
+        ]
+      },
+      {
+        "id": "182hc3795",
+        "name": "Basic Conversation Path",
+        "color": null,
+        "nodeIDs": [
+          "645d80e3f245951e8730bfab",
+          "645d80e3f245951e8730bfad",
+          "645d80e3f245951e8730bfaf"
+        ]
+      },
+      {
+        "id": "9d35p376e",
+        "name": "Save Information",
+        "color": "#5b9fd7",
+        "nodeIDs": [
+          "645d810df245951e8730c06f",
+          "645d810df245951e8730c071",
+          "645d810df245951e8730c073",
+          "645d810df245951e8730c075"
+        ]
+      }
+    ],
+    "autoSaveFromRestore": false,
+    "_id": "65f079060bc14fa0a78c2c50",
+    "updatedAt": "2024-03-13T03:54:15.768Z",
+    "domains": [
+      {
+        "id": "cla06iyr900b206pkh8d4ap8n",
+        "name": "Home",
+        "live": true,
+        "topicIDs": [
+          "645d72103c0ff6475d60535e"
+        ],
+        "rootDiagramID": "645d72103c0ff6475d60535e",
+        "updatedBy": 914718,
+        "updatedAt": "2024-03-13T10:17:38.510Z"
+      }
+    ],
+    "projectID": "65f079060bc14fa0a78c2c4f",
+    "rootDiagramID": "645d72103c0ff6475d60535e",
+    "templateDiagramID": "645d80c1c6751b0007e13832"
+  },
+  "diagrams": {
+    "645d80c1c6751b0007e13832": {
+      "name": "Template Diagram",
+      "type": "TEMPLATE",
+      "zoom": 100,
+      "nodes": {
+        "645d80c123f803000781bab8": {
+          "type": "start",
+          "data": {
+            "name": "Start",
+            "color": "#43494E",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "id": "645d80c123f803000781bab9",
+                  "type": "next",
+                  "target": null
+                }
+              },
+              "dynamic": []
+            },
+            "steps": []
+          },
+          "nodeID": "645d80c123f803000781bab8",
+          "coords": [
+            360,
+            120
+          ]
+        },
+        "645d80c1f245951e8730bed8": {
+          "type": "block",
+          "data": {
+            "name": "Fail",
+            "color": "#5b9fd7",
+            "steps": [
+              "645d80c1f245951e8730bee0"
+            ]
+          },
+          "nodeID": "645d80c1f245951e8730bed8",
+          "coords": [
+            -222.6288141724624,
+            219.371933852732
+          ]
+        },
+        "645d80c1f245951e8730beda": {
+          "type": "block",
+          "data": {
+            "name": "API Call",
+            "color": "#5b9fd7",
+            "steps": [
+              "645d80c1f245951e8730bee3"
+            ]
+          },
+          "nodeID": "645d80c1f245951e8730beda",
+          "coords": [
+            -616.1475219920557,
+            43.92007431671357
+          ]
+        },
+        "645d80c1f245951e8730bedc": {
+          "type": "block",
+          "data": {
+            "name": "Success",
+            "color": "#5b9fd7",
+            "steps": [
+              "645d80c1f245951e8730bee7"
+            ]
+          },
+          "nodeID": "645d80c1f245951e8730bedc",
+          "coords": [
+            -223.7095681864207,
+            45.207734992561996
+          ]
+        },
+        "645d80c1f245951e8730bede": {
+          "type": "block",
+          "data": {
+            "name": "Welcome",
+            "color": "#5b9fd7",
+            "steps": [
+              "645d80c1f245951e8730beea",
+              "645d80c1f245951e8730beed"
+            ]
+          },
+          "nodeID": "645d80c1f245951e8730bede",
+          "coords": [
+            -1001.0479160760318,
+            38.42594896862681
+          ]
+        },
+        "645d80c1f245951e8730bee0": {
+          "type": "text",
+          "data": {
+            "name": "Text",
+            "texts": [
+              {
+                "id": "u08yz372g",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": "Error"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "canvasVisibility": "preview",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "645d80c1f245951e8730bee1"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "645d80c1f245951e8730bee0"
+        },
+        "645d80c1f245951e8730bee3": {
+          "type": "api",
+          "data": {
+            "name": "",
+            "url": "https://api.openai.com/v1/completions",
+            "body": [
+              {
+                "key": "",
+                "val": ""
+              }
+            ],
+            "params": [],
+            "method": "POST",
+            "headers": [
+              {
+                "key": "Content-Type",
+                "val": "application/json"
+              },
+              {
+                "key": "Authorization",
+                "val": "Bearer <ADD API KEY HERE>"
+              }
+            ],
+            "content": "{\n  \"model\": \"text-davinci-003\",\n  \"prompt\": \"{last_utterance}\",\n  \"max_tokens\": 7,\n  \"temperature\": 0,\n  \"top_p\": 1,\n  \"n\": 1,\n  \"stream\": false,\n  \"logprobs\": null,\n  \"stop\": \"\\n\"\n}",
+            "mappings": [
+              {
+                "path": "response",
+                "var": "response"
+              }
+            ],
+            "bodyType": "rawInput",
+            "selectedAction": "Make a POST Request",
+            "selectedIntegration": "Custom API",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "645d80c1f245951e8730bee7",
+                  "id": "645d80c1f245951e8730bee5",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          -450.14853888468815,
+                          197.66856098360233
+                        ]
+                      },
+                      {
+                        "point": [
+                          -419.9285388846881,
+                          197.66856098360233
+                        ]
+                      },
+                      {
+                        "point": [
+                          -419.9285388846881,
+                          124.70856098360252
+                        ]
+                      },
+                      {
+                        "point": [
+                          -389.7085388846883,
+                          124.70856098360252
+                        ],
+                        "allowedToTop": false
+                      }
+                    ]
+                  }
+                },
+                "fail": {
+                  "type": "fail",
+                  "target": "645d80c1f245951e8730bee0",
+                  "id": "645d80c1f245951e8730bee4",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          -450.14853888468815,
+                          252.16856098360233
+                        ]
+                      },
+                      {
+                        "point": [
+                          -419.38853888468816,
+                          252.16856098360233
+                        ]
+                      },
+                      {
+                        "point": [
+                          -419.38853888468816,
+                          298.8685609836024
+                        ]
+                      },
+                      {
+                        "point": [
+                          -388.62853888468794,
+                          298.8685609836024
+                        ],
+                        "allowedToTop": false
+                      }
+                    ]
+                  }
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "645d80c1f245951e8730bee3"
+        },
+        "645d80c1f245951e8730bee7": {
+          "type": "text",
+          "data": {
+            "name": "Text",
+            "texts": [
+              {
+                "id": "vh8xb37hw",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": ""
+                      },
+                      {
+                        "id": "response",
+                        "name": "response",
+                        "isSlot": false,
+                        "type": "variable",
+                        "children": [
+                          {
+                            "text": ""
+                          }
+                        ]
+                      },
+                      {
+                        "text": " "
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "canvasVisibility": "preview",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "645d80c1f245951e8730bee8"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "645d80c1f245951e8730bee7"
+        },
+        "645d80c1f245951e8730beea": {
+          "type": "text",
+          "data": {
+            "name": "Text",
+            "texts": [
+              {
+                "id": "xg77r3eyi",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": "This flow captures a users question and sends it to the OpenAI API"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "canvasVisibility": "preview",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "645d80c1f245951e8730beed",
+                  "id": "645d80c1f245951e8730beeb"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "645d80c1f245951e8730beea"
+        },
+        "645d80c1f245951e8730beed": {
+          "type": "captureV2",
+          "data": {
+            "name": "Capture",
+            "intentScope": "GLOBAL",
+            "capture": {
+              "type": "query",
+              "variable": "last_utterance"
+            },
+            "noReply": null,
+            "noMatch": null,
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "645d80c1f245951e8730beda",
+                  "id": "645d80c1f245951e8730beee",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          -835.0485388846881,
+                          212.42856098360232
+                        ]
+                      },
+                      {
+                        "point": [
+                          -808.0985388846883,
+                          212.42856098360232
+                        ]
+                      },
+                      {
+                        "point": [
+                          -808.0985388846883,
+                          70.91856098360233
+                        ]
+                      },
+                      {
+                        "point": [
+                          -781.1485388846883,
+                          70.91856098360233
+                        ],
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                },
+                "else": {
+                  "type": "else",
+                  "target": null,
+                  "id": "645d80c1f245951e8730beef"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "645d80c1f245951e8730beed"
+        },
+        "645d80e3f245951e8730bfab": {
+          "type": "block",
+          "data": {
+            "name": "Start Block",
+            "color": "#5b9fd7",
+            "steps": [
+              "645d80e3f245951e8730bfb1",
+              "645d80e3f245951e8730bfb4"
+            ]
+          },
+          "nodeID": "645d80e3f245951e8730bfab",
+          "coords": [
+            -819.3265429697817,
+            67.92280860959261
+          ]
+        },
+        "645d80e3f245951e8730bfad": {
+          "type": "block",
+          "data": {
+            "name": "Option 2",
+            "color": "#5b9fd7",
+            "steps": [
+              "645d80e3f245951e8730bfb9"
+            ]
+          },
+          "nodeID": "645d80e3f245951e8730bfad",
+          "coords": [
+            -405.86936185538286,
+            272.76782495391024
+          ]
+        },
+        "645d80e3f245951e8730bfaf": {
+          "type": "block",
+          "data": {
+            "name": "Option 1",
+            "color": "#5b9fd7",
+            "steps": [
+              "645d80e3f245951e8730bfbc"
+            ]
+          },
+          "nodeID": "645d80e3f245951e8730bfaf",
+          "coords": [
+            -404.3501872787125,
+            37.526451345597025
+          ]
+        },
+        "645d80e3f245951e8730bfb1": {
+          "type": "text",
+          "data": {
+            "name": "Text",
+            "texts": [
+              {
+                "id": "929q734a2",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": "How can I help you?"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "canvasVisibility": "preview",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "645d80e3f245951e8730bfb4",
+                  "id": "645d80e3f245951e8730bfb2"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "645d80e3f245951e8730bfb1"
+        },
+        "645d80e3f245951e8730bfb4": {
+          "type": "buttons",
+          "data": {
+            "name": "Buttons",
+            "buttons": [
+              {
+                "id": "xr9vd34tj",
+                "name": "Path 1",
+                "actions": []
+              },
+              {
+                "id": "cl9vs34c7",
+                "name": "Path 2",
+                "actions": []
+              }
+            ],
+            "intentScope": "GLOBAL",
+            "noMatch": null,
+            "noReply": null,
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "else": {
+                  "type": "else",
+                  "target": null,
+                  "id": "645d80e3f245951e8730bfb5"
+                }
+              },
+              "dynamic": [
+                {
+                  "type": "",
+                  "target": "645d80e3f245951e8730bfaf",
+                  "id": "645d80e3f245951e8730bfb6",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          -653.3265352328635,
+                          208.1728396647967
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          -611.3382426737455,
+                          208.1728396647967
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          -611.3382426737455,
+                          64.52657516223951
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          -569.3499501146275,
+                          64.52657516223951
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                },
+                {
+                  "type": "",
+                  "target": "645d80e3f245951e8730bfad",
+                  "id": "645d80e3f245951e8730bfb7",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          -653.3265352328635,
+                          262.67285902304945
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          -612.0979465355017,
+                          262.67285902304945
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          -612.0979465355017,
+                          299.76805860663205
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          -570.8693578381401,
+                          299.76805860663205
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          "nodeID": "645d80e3f245951e8730bfb4"
+        },
+        "645d80e3f245951e8730bfb9": {
+          "type": "text",
+          "data": {
+            "name": "Text",
+            "texts": [
+              {
+                "id": "lu9tb340d",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": "Second Option"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "canvasVisibility": "preview",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "645d80e3f245951e8730bfba"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "645d80e3f245951e8730bfb9"
+        },
+        "645d80e3f245951e8730bfbc": {
+          "type": "text",
+          "data": {
+            "name": "Text",
+            "texts": [
+              {
+                "id": "ky9ry343w",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": "First Option"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "canvasVisibility": "preview",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "645d80e3f245951e8730bfbd"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "645d80e3f245951e8730bfbc"
+        },
+        "645d810df245951e8730c06f": {
+          "type": "block",
+          "data": {
+            "name": "Other names",
+            "color": "#000000",
+            "steps": [
+              "645d810df245951e8730c077"
+            ]
+          },
+          "nodeID": "645d810df245951e8730c06f",
+          "coords": [
+            -205.57295111575513,
+            235.69244620931897
+          ]
+        },
+        "645d810df245951e8730c071": {
+          "type": "block",
+          "data": {
+            "name": "Use Logic to Route",
+            "color": "#000000",
+            "steps": [
+              "645d810df245951e8730c07a"
+            ]
+          },
+          "nodeID": "645d810df245951e8730c071",
+          "coords": [
+            -606.4933015861607,
+            76.0116960555282
+          ]
+        },
+        "645d810df245951e8730c073": {
+          "type": "block",
+          "data": {
+            "name": "Elon Musk",
+            "color": "#000000",
+            "steps": [
+              "645d810df245951e8730c07e"
+            ]
+          },
+          "nodeID": "645d810df245951e8730c073",
+          "coords": [
+            -206.82295111575513,
+            76.94244620931875
+          ]
+        },
+        "645d810df245951e8730c075": {
+          "type": "block",
+          "data": {
+            "name": "Capture Information",
+            "color": "#000000",
+            "steps": [
+              "645d810df245951e8730c081",
+              "645d810df245951e8730c084"
+            ]
+          },
+          "nodeID": "645d810df245951e8730c075",
+          "coords": [
+            -1018.103779132739,
+            74.60207113242325
+          ]
+        },
+        "645d810df245951e8730c077": {
+          "type": "text",
+          "data": {
+            "name": "Text",
+            "texts": [
+              {
+                "id": "1jabe34gf",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": "Hello "
+                      },
+                      {
+                        "id": "name",
+                        "name": "name",
+                        "isSlot": false,
+                        "type": "variable",
+                        "children": [
+                          {
+                            "text": ""
+                          }
+                        ]
+                      },
+                      {
+                        "text": " !"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "canvasVisibility": "preview",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "645d810df245951e8730c078"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "645d810df245951e8730c077"
+        },
+        "645d810df245951e8730c07a": {
+          "type": "ifV2",
+          "data": {
+            "name": "If",
+            "expressions": [
+              {
+                "type": null,
+                "name": "If name is elon musk",
+                "value": [
+                  {
+                    "logicInterface": "variable",
+                    "type": "equals",
+                    "value": [
+                      {
+                        "type": "variable",
+                        "value": "name"
+                      },
+                      {
+                        "type": "value",
+                        "value": "elon musk"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "noMatch": {
+              "type": "path",
+              "pathName": "All other names"
+            },
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "else": {
+                  "type": "else",
+                  "target": "645d810df245951e8730c06f",
+                  "id": "645d810df245951e8730c07b",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          -440.49316890459295,
+                          210.2616625507901
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          -405.533023663163,
+                          210.2616625507901
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          -405.533023663163,
+                          262.69243881980606
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          -370.57287842173355,
+                          262.69243881980606
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                }
+              },
+              "dynamic": [
+                {
+                  "type": "",
+                  "target": "645d810df245951e8730c073",
+                  "id": "645d810df245951e8730c07c",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          -440.49316890459295,
+                          155.76164185389405
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          -406.15799298328466,
+                          155.76164185389405
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          -406.15799298328466,
+                          103.94229128709912
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          -371.8228170619768,
+                          103.94229128709912
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": true
+                      }
+                    ],
+                    "event": {
+                      "type": "If name is elon musk"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "nodeID": "645d810df245951e8730c07a"
+        },
+        "645d810df245951e8730c07e": {
+          "type": "text",
+          "data": {
+            "name": "Text",
+            "texts": [
+              {
+                "id": "1jabe34gf",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": "Twitter is the best 🐦"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "canvasVisibility": "preview",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "645d810df245951e8730c07f"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "645d810df245951e8730c07e"
+        },
+        "645d810df245951e8730c081": {
+          "type": "text",
+          "data": {
+            "name": "Text",
+            "texts": [
+              {
+                "id": "s8a30349g",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": "What is your name?"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "canvasVisibility": "preview",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "645d810df245951e8730c084",
+                  "id": "645d810df245951e8730c082"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "645d810df245951e8730c081"
+        },
+        "645d810df245951e8730c084": {
+          "type": "captureV2",
+          "data": {
+            "name": "Capture",
+            "intentScope": "GLOBAL",
+            "capture": {
+              "type": "query",
+              "variable": "name"
+            },
+            "noReply": null,
+            "noMatch": null,
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "645d810df245951e8730c071",
+                  "id": "645d810df245951e8730c085",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          -852.1037428795312,
+                          214.85203404699405
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          -811.798535755921,
+                          214.85203404699405
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          -811.798535755921,
+                          103.01180808305344
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          -771.4933286323107,
+                          103.01180808305344
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                },
+                "else": {
+                  "type": "else",
+                  "target": null,
+                  "id": "645d810df245951e8730c086"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "645d810df245951e8730c084"
+        }
+      },
+      "offsetX": 272,
+      "offsetY": 204,
+      "modified": 1683849409,
+      "creatorID": 914692,
+      "variables": [],
+      "menuItems": [],
+      "_id": "65f079060bc14fa0a78c2c57",
+      "diagramID": "645d80c1c6751b0007e13832",
+      "versionID": "65f079060bc14fa0a78c2c50"
+    },
+    "645d72103c0ff6475d60535e": {
+      "name": "Start Here 🚀",
+      "type": "TOPIC",
+      "zoom": 100,
+      "nodes": {
+        "start00000000000000000000": {
+          "type": "start",
+          "data": {
+            "name": "Start",
+            "color": "#56b365",
+            "steps": [
+              "65f17d757b614b7d39e8172d"
+            ],
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "65f083f5872364ceb9e0b3f2",
+                  "id": "6032afcf359e8c14c06c0319",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          163.71,
+                          481.71
+                        ]
+                      },
+                      {
+                        "point": [
+                          291.42,
+                          481.71
+                        ]
+                      },
+                      {
+                        "point": [
+                          291.42,
+                          518.47
+                        ]
+                      },
+                      {
+                        "point": [
+                          419.13,
+                          518.47
+                        ],
+                        "allowedToTop": false
+                      }
+                    ]
+                  }
+                }
+              },
+              "dynamic": []
+            },
+            "label": "Start"
+          },
+          "nodeID": "start00000000000000000000",
+          "coords": [
+            99.07313821248879,
+            459.706980937614
+          ]
+        },
+        "65f086b91118f187de289c37": {
+          "type": "text",
+          "data": {
+            "name": "Text",
+            "texts": [
+              {
+                "id": "6dcq384u",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": "What is your name?",
+                        "strikeThrough": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "canvasVisibility": "preview",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "65f086b91118f187de289c38"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "65f086b91118f187de289c37",
+          "coords": [
+            0,
+            0
+          ]
+        },
+        "65f086b91118f187de289c39": {
+          "type": "block",
+          "data": {
+            "name": "Ask Name",
+            "steps": [
+              "65f086b91118f187de289c37",
+              "65f134d31e96f1b39395120b"
+            ],
+            "color": ""
+          },
+          "nodeID": "65f086b91118f187de289c39",
+          "coords": [
+            1009.0541199055451,
+            429.8531109408086
+          ]
+        },
+        "65f083f5872364ceb9e0b3f2": {
+          "type": "text",
+          "data": {
+            "name": "Text",
+            "texts": [
+              {
+                "id": "jlgc38ro",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": "Welcome to GenFlow, your personalized NFT creation assistant! I'm here to guide you through the process of creating your own unique NFT."
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "s931138bo",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": "Welcome to GenFlow, your personalized NFT creation assistant! I'm here to help you create your own unique NFT."
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "s9312382s",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": "Hello and welcome to GenFlow, your personalized NFT creation assistant! Let me guide you through the process of creating your own unique NFT."
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "s931338y8",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": "Welcome to GenFlow! I'm here to assist you in creating your very own personalized NFT."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "canvasVisibility": "preview",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "65f086b91118f187de289c39",
+                  "id": "65f083f5872364ceb9e0b3f3",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          751.53,
+                          576.07
+                        ]
+                      },
+                      {
+                        "point": [
+                          797.79,
+                          576.07
+                        ]
+                      },
+                      {
+                        "point": [
+                          797.79,
+                          456.85
+                        ]
+                      },
+                      {
+                        "point": [
+                          844.05,
+                          456.85
+                        ],
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "65f083f5872364ceb9e0b3f2"
+        },
+        "65f083f5872364ceb9e0b3f4": {
+          "type": "block",
+          "data": {
+            "name": "Intro Block",
+            "color": "",
+            "steps": [
+              "65f083f5872364ceb9e0b3f2"
+            ]
+          },
+          "nodeID": "65f083f5872364ceb9e0b3f4",
+          "coords": [
+            585.1344930223961,
+            439.4667578626811
+          ]
+        },
+        "65f089521118f187de289c5e": {
+          "type": "text",
+          "data": {
+            "name": "Text",
+            "texts": [
+              {
+                "id": "56t8381u",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": "Hi "
+                      },
+                      {
+                        "id": "last_utterance",
+                        "name": "last_utterance",
+                        "isSlot": false,
+                        "type": "variable",
+                        "children": [
+                          {
+                            "text": ""
+                          }
+                        ]
+                      },
+                      {
+                        "text": ",  hope you're doing well!"
+                      }
+                    ]
+                  },
+                  {
+                    "children": [
+                      {
+                        "text": ""
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "sn4vk38z2",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": "Hi there, hope you're doing well!"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "sn4vl389o",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": "Hey "
+                      },
+                      {
+                        "id": "last_utterance",
+                        "name": "last_utterance",
+                        "isSlot": false,
+                        "type": "variable",
+                        "children": [
+                          {
+                            "text": ""
+                          }
+                        ]
+                      },
+                      {
+                        "text": ", hope all is well!"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "sn4vm38o7",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": "Greetings "
+                      },
+                      {
+                        "id": "last_utterance",
+                        "name": "last_utterance",
+                        "isSlot": false,
+                        "type": "variable",
+                        "children": [
+                          {
+                            "text": ""
+                          }
+                        ]
+                      },
+                      {
+                        "text": ", I hope you're doing well!"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "sn4vk38z2",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": "Hi there, hope you're doing well!"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "sn4vl389o",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": "Hey "
+                      },
+                      {
+                        "id": "last_utterance",
+                        "name": "last_utterance",
+                        "isSlot": false,
+                        "type": "variable",
+                        "children": [
+                          {
+                            "text": ""
+                          }
+                        ]
+                      },
+                      {
+                        "text": ", hope all is well!"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "sn4vm38o7",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": "Greetings "
+                      },
+                      {
+                        "id": "last_utterance",
+                        "name": "last_utterance",
+                        "isSlot": false,
+                        "type": "variable",
+                        "children": [
+                          {
+                            "text": ""
+                          }
+                        ]
+                      },
+                      {
+                        "text": ", I hope you're doing well!"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "canvasVisibility": "preview",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "65f08c31f2a641b97eb536f7",
+                  "id": "65f089521118f187de289c5f",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          1194.48,
+                          810.42
+                        ]
+                      },
+                      {
+                        "point": [
+                          1218.48,
+                          810.42
+                        ]
+                      },
+                      {
+                        "point": [
+                          1218.48,
+                          925.87
+                        ]
+                      },
+                      {
+                        "point": [
+                          1031.26,
+                          925.87
+                        ]
+                      },
+                      {
+                        "point": [
+                          1031.26,
+                          1041.33
+                        ],
+                        "toTop": true,
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "65f089521118f187de289c5e",
+          "coords": [
+            0,
+            0
+          ]
+        },
+        "65f089521118f187de289c60": {
+          "type": "block",
+          "data": {
+            "name": "Wallet Address Retrieval",
+            "steps": [
+              "65f089521118f187de289c5e"
+            ],
+            "color": ""
+          },
+          "nodeID": "65f089521118f187de289c60",
+          "coords": [
+            1028.0823286979269,
+            703.8156157050556
+          ]
+        },
+        "65f08c31f2a641b97eb536f5": {
+          "type": "text",
+          "data": {
+            "name": "Text",
+            "texts": [
+              {
+                "id": "853d938vg",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": "To begin, could you please tell me what type of NFT you'd like to generate? E.g. artwork, music, or something else"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "6l43e38j3",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": "First off, can you let me know what kind of NFT you want to create? For example, art, music, or another type?"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "6n43f38nh",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": "To get started, could you please share what type of NFT you're looking to create? Such as art, music, or something else?"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "6n43g38ak",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": "To start, can you tell me what type of NFT you're interested in generating? Like art, music, or another category?"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "6l43e38j3",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": "First off, can you let me know what kind of NFT you want to create? For example, art, music, or another type?"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "6n43f38nh",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": "To get started, could you please share what type of NFT you're looking to create? Such as art, music, or something else?"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "6n43g38ak",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": "To start, can you tell me what type of NFT you're interested in generating? Like art, music, or another category?"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "canvasVisibility": "preview",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "65f08c31f2a641b97eb536f6"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "65f08c31f2a641b97eb536f5"
+        },
+        "65f08c31f2a641b97eb536f7": {
+          "type": "block",
+          "data": {
+            "name": "NFT Creation",
+            "steps": [
+              "65f08c31f2a641b97eb536f5",
+              "65f08cacf2a641b97eb53732"
+            ],
+            "color": ""
+          },
+          "nodeID": "65f08c31f2a641b97eb536f7",
+          "coords": [
+            1031.2582739492916,
+            1041.3341131126529
+          ]
+        },
+        "65f08cacf2a641b97eb53732": {
+          "type": "captureV2",
+          "data": {
+            "name": "Capture",
+            "intentScope": "GLOBAL",
+            "capture": {
+              "type": "query",
+              "variable": "65f08d37e3d2189a452986e7"
+            },
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "65f08df5f2a641b97eb5380e",
+                  "id": "65f08cacf2a641b97eb53733",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          1197.66,
+                          1276.18
+                        ]
+                      },
+                      {
+                        "point": [
+                          1221.66,
+                          1276.18
+                        ]
+                      },
+                      {
+                        "point": [
+                          1221.66,
+                          1400.31
+                        ]
+                      },
+                      {
+                        "point": [
+                          1034.2,
+                          1400.31
+                        ]
+                      },
+                      {
+                        "point": [
+                          1034.2,
+                          1524.43
+                        ],
+                        "toTop": true,
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                },
+                "else": {
+                  "type": "else",
+                  "target": null,
+                  "id": "65f08cacf2a641b97eb53734"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "65f08cacf2a641b97eb53732",
+          "coords": [
+            0,
+            0
+          ]
+        },
+        "65f08df5f2a641b97eb5380c": {
+          "type": "text",
+          "data": {
+            "name": "Text",
+            "texts": [
+              {
+                "id": "524kz38n2",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": "Fantastic choice, "
+                      },
+                      {
+                        "id": "65f08d37e3d2189a452986e7",
+                        "name": "NFT_Creation",
+                        "isSlot": true,
+                        "type": "variable",
+                        "children": [
+                          {
+                            "text": ""
+                          }
+                        ]
+                      },
+                      {
+                        "text": " Let's proceed. "
+                      }
+                    ]
+                  },
+                  {
+                    "children": [
+                      {
+                        "text": ""
+                      }
+                    ]
+                  },
+                  {
+                    "children": [
+                      {
+                        "text": "Could you provide the name you'd like for your NFT?"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "to5ba389i",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": "Great selection, "
+                      },
+                      {
+                        "id": "65f08d37e3d2189a452986e7",
+                        "name": "NFT_Creation",
+                        "isSlot": true,
+                        "type": "variable",
+                        "children": [
+                          {
+                            "text": ""
+                          }
+                        ]
+                      },
+                      {
+                        "text": ". Let's get started. What name do you want for your NFT?"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "tp5bb38o9",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": "Excellent pick, "
+                      },
+                      {
+                        "id": "65f08d37e3d2189a452986e7",
+                        "name": "NFT_Creation",
+                        "isSlot": true,
+                        "type": "variable",
+                        "children": [
+                          {
+                            "text": ""
+                          }
+                        ]
+                      },
+                      {
+                        "text": ". Ready to move forward. What title do you want for your NFT?"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "tp5bc38sx",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": "Brilliant choice, "
+                      },
+                      {
+                        "id": "65f08d37e3d2189a452986e7",
+                        "name": "NFT_Creation",
+                        "isSlot": true,
+                        "type": "variable",
+                        "children": [
+                          {
+                            "text": ""
+                          }
+                        ]
+                      },
+                      {
+                        "text": ". Let's continue. What name do you want for your NFT?"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "canvasVisibility": "preview",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "65f08df5f2a641b97eb5380d",
+                  "data": {}
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "65f08df5f2a641b97eb5380c"
+        },
+        "65f08df5f2a641b97eb5380e": {
+          "type": "block",
+          "data": {
+            "name": "NFT's Name ",
+            "steps": [
+              "65f08df5f2a641b97eb5380c",
+              "65f090941118f187de289d71"
+            ],
+            "color": ""
+          },
+          "nodeID": "65f08df5f2a641b97eb5380e",
+          "coords": [
+            1034.2012316889234,
+            1524.4327836428133
+          ]
+        },
+        "65f08e61f2a641b97eb53815": {
+          "type": "text",
+          "data": {
+            "name": "Text",
+            "texts": [
+              {
+                "id": "134oz388a",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": "Now, could you share a brief description ?"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "canvasVisibility": "preview",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "65f08e61f2a641b97eb53816"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "65f08e61f2a641b97eb53815"
+        },
+        "65f08e61f2a641b97eb53817": {
+          "type": "block",
+          "data": {
+            "name": "NFT's Description",
+            "steps": [
+              "65f08e61f2a641b97eb53815",
+              "65f0921c1118f187de289d79"
+            ],
+            "color": ""
+          },
+          "nodeID": "65f08e61f2a641b97eb53817",
+          "coords": [
+            1050.0154902540746,
+            2034.3852004403493
+          ]
+        },
+        "65f090941118f187de289d71": {
+          "type": "captureV2",
+          "data": {
+            "name": "Capture",
+            "intentScope": "GLOBAL",
+            "capture": {
+              "type": "query",
+              "variable": "65f090b11c55855d4fdae6dc"
+            },
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "65f08e61f2a641b97eb53817",
+                  "id": "65f090941118f187de289d72",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          1200.6,
+                          1774.28
+                        ]
+                      },
+                      {
+                        "point": [
+                          1224.6,
+                          1774.28
+                        ]
+                      },
+                      {
+                        "point": [
+                          1224.6,
+                          1904.33
+                        ]
+                      },
+                      {
+                        "point": [
+                          1050.02,
+                          1904.33
+                        ]
+                      },
+                      {
+                        "point": [
+                          1050.02,
+                          2034.39
+                        ],
+                        "toTop": true,
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                },
+                "else": {
+                  "type": "else",
+                  "target": null,
+                  "id": "65f090941118f187de289d73"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "65f090941118f187de289d71",
+          "coords": [
+            0,
+            0
+          ]
+        },
+        "65f0921c1118f187de289d79": {
+          "type": "captureV2",
+          "data": {
+            "name": "Capture",
+            "intentScope": "GLOBAL",
+            "capture": {
+              "type": "query",
+              "variable": "65f0926b1c55855d4fdae6e1"
+            },
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "65f16ab5df3eec873ab50bd7",
+                  "id": "65f0921c1118f187de289d7a",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          1216.42,
+                          2191.24
+                        ]
+                      },
+                      {
+                        "point": [
+                          1240.42,
+                          2191.24
+                        ]
+                      },
+                      {
+                        "point": [
+                          1240.42,
+                          2296.47
+                        ]
+                      },
+                      {
+                        "point": [
+                          1055.25,
+                          2296.47
+                        ]
+                      },
+                      {
+                        "point": [
+                          1055.25,
+                          2401.7
+                        ],
+                        "toTop": true,
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                },
+                "else": {
+                  "type": "else",
+                  "target": null,
+                  "id": "65f0921c1118f187de289d7b"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "65f0921c1118f187de289d79",
+          "coords": [
+            0,
+            0
+          ]
+        },
+        "65f0984b1118f187de289e2c": {
+          "type": "block",
+          "data": {
+            "name": "New Block 14",
+            "steps": [
+              "65f09d0d1118f187de289e33",
+              "65f09e091118f187de289e3a",
+              "65f09ec41118f187de289e49"
+            ]
+          },
+          "nodeID": "65f0984b1118f187de289e2c",
+          "coords": [
+            2386.7056256961755,
+            2446.1697951923898
+          ]
+        },
+        "65f09d0d1118f187de289e33": {
+          "type": "text",
+          "data": {
+            "name": "Text",
+            "texts": [
+              {
+                "id": "ex4dl38li",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": "Let's create one! "
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "canvasVisibility": "preview",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "65f09d0d1118f187de289e34"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "65f09d0d1118f187de289e33",
+          "coords": [
+            0,
+            0
+          ]
+        },
+        "65f09e091118f187de289e3a": {
+          "type": "text",
+          "data": {
+            "name": "Text",
+            "texts": [
+              {
+                "id": "5t4iw38j4",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": "Enter a prompt to generate your NFT"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "canvasVisibility": "preview",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "65f09e091118f187de289e3b",
+                  "data": {}
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "65f09e091118f187de289e3a"
+        },
+        "65f09ec41118f187de289e49": {
+          "type": "captureV2",
+          "data": {
+            "name": "Capture",
+            "intentScope": "GLOBAL",
+            "capture": {
+              "type": "query",
+              "variable": "65f09efc1c55855d4fdae7c0"
+            },
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "65f0a239f2a641b97eb53923",
+                  "id": "65f09ec41118f187de289e4a",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          2552.71,
+                          2645.42
+                        ]
+                      },
+                      {
+                        "point": [
+                          2664.26,
+                          2645.42
+                        ]
+                      },
+                      {
+                        "point": [
+                          2664.26,
+                          2459.28
+                        ]
+                      },
+                      {
+                        "point": [
+                          2775.82,
+                          2459.28
+                        ],
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                },
+                "else": {
+                  "type": "else",
+                  "target": null,
+                  "id": "65f09ec41118f187de289e4b"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "65f09ec41118f187de289e49",
+          "coords": [
+            0,
+            0
+          ]
+        },
+        "65f0a239f2a641b97eb53921": {
+          "type": "block",
+          "data": {
+            "name": "Fail",
+            "color": "#5b9fd7",
+            "steps": [
+              "65f0a239f2a641b97eb53929"
+            ]
+          },
+          "nodeID": "65f0a239f2a641b97eb53921",
+          "coords": [
+            3599.789023384148,
+            2627.0500489796686
+          ]
+        },
+        "65f0a239f2a641b97eb53923": {
+          "type": "block",
+          "data": {
+            "name": "Nvidia SDXL API",
+            "color": "#5b9fd7",
+            "steps": [
+              "65f0a239f2a641b97eb5392c"
+            ]
+          },
+          "nodeID": "65f0a239f2a641b97eb53923",
+          "coords": [
+            2940.8181448273695,
+            2432.27726064832
+          ]
+        },
+        "65f0a239f2a641b97eb53929": {
+          "type": "text",
+          "data": {
+            "name": "Text",
+            "texts": [
+              {
+                "id": "u08yz372g",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": "Error"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "canvasVisibility": "preview",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "65f0a239f2a641b97eb5392a"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "65f0a239f2a641b97eb53929"
+        },
+        "65f0a239f2a641b97eb5392c": {
+          "type": "api",
+          "data": {
+            "name": "",
+            "url": "https://api.nvcf.nvidia.com/v2/nvcf/pexec/functions/89848fb8-549f-41bb-88cb-95d6597044a4",
+            "body": [
+              {
+                "key": "",
+                "val": ""
+              }
+            ],
+            "params": [
+              {
+                "key": "",
+                "val": ""
+              }
+            ],
+            "method": "POST",
+            "headers": [
+              {
+                "key": "Authorization",
+                "val": "Bearer {{[nvidia_api_key].65f11e6cfe4048bdfc9363b2}}"
+              },
+              {
+                "key": "Accept",
+                "val": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "val": "application/json"
+              }
+            ],
+            "content": "{\n  \"prompt\": \"{Text_Prompt_for_Image}\",\n  \"negative_prompt\": \"\",\n  \"sampler\": \"DPM\",\n  \"seed\": 0,\n  \"guidance_scale\": 5,\n  \"inference_steps\": 25\n}",
+            "mappings": [
+              {
+                "path": "response.b64_json",
+                "var": "65f122d9fe4048bdfc9363b4"
+              }
+            ],
+            "bodyType": "rawInput",
+            "selectedAction": "Make a POST Request",
+            "selectedIntegration": "Custom API",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "65f12305ee7bde64237af32f",
+                  "id": "65f0a239f2a641b97eb5392e",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          3109.72,
+                          2598.33
+                        ]
+                      },
+                      {
+                        "point": [
+                          3219.21,
+                          2598.33
+                        ]
+                      },
+                      {
+                        "point": [
+                          3219.21,
+                          2487.5
+                        ]
+                      },
+                      {
+                        "point": [
+                          3328.69,
+                          2487.5
+                        ],
+                        "allowedToTop": false
+                      }
+                    ]
+                  }
+                },
+                "fail": {
+                  "type": "fail",
+                  "target": "65f0a239f2a641b97eb53929",
+                  "id": "65f0a239f2a641b97eb5392d",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          3106.82,
+                          2654.03
+                        ]
+                      },
+                      {
+                        "point": [
+                          3270.3,
+                          2654.03
+                        ]
+                      },
+                      {
+                        "point": [
+                          3270.3,
+                          2706.05
+                        ]
+                      },
+                      {
+                        "point": [
+                          3433.79,
+                          2706.05
+                        ],
+                        "allowedToTop": false
+                      }
+                    ]
+                  }
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "65f0a239f2a641b97eb5392c"
+        },
+        "65f1218fee7bde64237af311": {
+          "type": "setV2",
+          "data": {
+            "name": "",
+            "sets": [
+              {
+                "type": "advance",
+                "variable": "65f11e6cfe4048bdfc9363b2",
+                "expression": "\"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\""
+              },
+              {
+                "type": "advance",
+                "variable": "65f121f3fe4048bdfc9363b3",
+                "expression": "\"data:image/jpg;base64,\""
+              }
+            ],
+            "title": "API Key",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "65f0984b1118f187de289e2c",
+                  "id": "65f1218fee7bde64237af312",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          1977.94,
+                          2481.02
+                        ]
+                      },
+                      {
+                        "point": [
+                          2221.71,
+                          2473.17
+                        ]
+                      }
+                    ]
+                  }
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "65f1218fee7bde64237af311",
+          "coords": [
+            0,
+            0
+          ]
+        },
+        "65f1218fee7bde64237af313": {
+          "type": "block",
+          "data": {
+            "name": "New Block 16",
+            "steps": [
+              "65f1218fee7bde64237af311"
+            ],
+            "color": ""
+          },
+          "nodeID": "65f1218fee7bde64237af313",
+          "coords": [
+            1811.936599958383,
+            2401.7714155887784
+          ]
+        },
+        "65f0a239f2a641b97eb53925": {
+          "type": "block",
+          "data": {
+            "name": "Success",
+            "color": "#5b9fd7",
+            "steps": [
+              "65f12305ee7bde64237af32f"
+            ]
+          },
+          "nodeID": "65f0a239f2a641b97eb53925",
+          "coords": [
+            3492.5931872529864,
+            2408.9041548563896
+          ]
+        },
+        "65f12305ee7bde64237af32f": {
+          "type": "setV2",
+          "data": {
+            "name": "",
+            "sets": [
+              {
+                "type": "advance",
+                "variable": "65f122d9fe4048bdfc9363b4",
+                "expression": "{{[ImageType].65f121f3fe4048bdfc9363b3}}+{{[Answer].65f122d9fe4048bdfc9363b4}}"
+              }
+            ],
+            "title": "Answer",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "65f12e92f377ae2f8aaf8187",
+                  "id": "65f12305ee7bde64237af330",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          3658.59,
+                          2488.15
+                        ]
+                      },
+                      {
+                        "point": [
+                          3787.23,
+                          2488.15
+                        ]
+                      },
+                      {
+                        "point": [
+                          3787.23,
+                          2649.33
+                        ]
+                      },
+                      {
+                        "point": [
+                          3915.87,
+                          2649.33
+                        ],
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "65f12305ee7bde64237af32f"
+        },
+        "65f12e92f377ae2f8aaf8184": {
+          "type": "cardV2",
+          "data": {
+            "name": "Card",
+            "title": "{{[NFT_Name].65f090b11c55855d4fdae6dc}}",
+            "buttons": [
+              {
+                "id": "guqg38i0",
+                "name": "Continue",
+                "intent": null
+              },
+              {
+                "id": "i3v538m2",
+                "name": "Generate another NFT",
+                "intent": null
+              }
+            ],
+            "imageUrl": "{Answer}",
+            "description": [
+              {
+                "children": [
+                  {
+                    "text": ""
+                  },
+                  {
+                    "id": "65f0926b1c55855d4fdae6e1",
+                    "name": "NFT_Description",
+                    "isSlot": true,
+                    "type": "variable",
+                    "children": [
+                      {
+                        "text": ""
+                      }
+                    ]
+                  },
+                  {
+                    "text": " "
+                  }
+                ]
+              }
+            ],
+            "portsV2": {
+              "byKey": {
+                "guqg38i0": {
+                  "id": "65f12fc61e96f1b393951001",
+                  "target": "65f17c237b614b7d39e81718",
+                  "type": "",
+                  "data": {}
+                },
+                "i3v538m2": {
+                  "id": "65f130411e96f1b393951010",
+                  "target": "65f130501e96f1b393951015",
+                  "type": "",
+                  "data": {}
+                }
+              },
+              "builtIn": {
+                "else": {
+                  "type": "else",
+                  "target": null,
+                  "id": "65f12e92f377ae2f8aaf8186"
+                },
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "65f12e92f377ae2f8aaf8185"
+                },
+                "no-reply": {
+                  "target": null
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "65f12e92f377ae2f8aaf8184",
+          "coords": [
+            0,
+            0
+          ]
+        },
+        "65f12e92f377ae2f8aaf8187": {
+          "type": "block",
+          "data": {
+            "name": "New Block 17",
+            "steps": [
+              "65f12e92f377ae2f8aaf8184",
+              "65f16a04d0935206816d697c"
+            ]
+          },
+          "nodeID": "65f12e92f377ae2f8aaf8187",
+          "coords": [
+            4080.8713699664713,
+            2622.3248423795258
+          ]
+        },
+        "65f130501e96f1b393951014": {
+          "type": "goToNode",
+          "data": {
+            "name": "",
+            "nodeID": "65f0984b1118f187de289e2c",
+            "diagramID": "645d72103c0ff6475d60535e",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "65f130501e96f1b393951014"
+        },
+        "65f130501e96f1b393951015": {
+          "type": "actions",
+          "data": {
+            "name": "",
+            "steps": [
+              "65f130501e96f1b393951014"
+            ]
+          },
+          "nodeID": "65f130501e96f1b393951015",
+          "coords": [
+            0,
+            0
+          ]
+        },
+        "65f134d31e96f1b39395120b": {
+          "type": "captureV2",
+          "data": {
+            "name": "Capture",
+            "intentScope": "GLOBAL",
+            "capture": {
+              "type": "query",
+              "variable": "last_utterance"
+            },
+            "noReply": null,
+            "noMatch": null,
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "65f089521118f187de289c5e",
+                  "id": "65f134d31e96f1b39395120c",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          1175.05,
+                          577.85
+                        ]
+                      },
+                      {
+                        "point": [
+                          1218.08,
+                          577.85
+                        ]
+                      },
+                      {
+                        "point": [
+                          1218.08,
+                          782.82
+                        ]
+                      },
+                      {
+                        "point": [
+                          1194.08,
+                          782.82
+                        ],
+                        "reversed": true,
+                        "allowedToTop": false
+                      }
+                    ]
+                  }
+                },
+                "else": {
+                  "type": "else",
+                  "target": null,
+                  "id": "65f134d31e96f1b39395120d"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "65f134d31e96f1b39395120b",
+          "coords": [
+            0,
+            0
+          ]
+        },
+        "65f16a04d0935206816d697c": {
+          "type": "text",
+          "data": {
+            "name": "Text",
+            "texts": [
+              {
+                "id": "4o1st3814",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": "If you wish to save this image right click on it and download."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "canvasVisibility": "preview",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "65f16a04d0935206816d697d",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          4247.27,
+                          2886.93
+                        ]
+                      },
+                      {
+                        "point": [
+                          4271.27,
+                          2886.93
+                        ]
+                      },
+                      {
+                        "point": [
+                          4271.27,
+                          2985.58
+                        ]
+                      },
+                      {
+                        "point": [
+                          4094.12,
+                          2985.58
+                        ]
+                      },
+                      {
+                        "point": [
+                          4094.12,
+                          3084.24
+                        ],
+                        "toTop": true,
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "65f16a04d0935206816d697c",
+          "coords": [
+            0,
+            0
+          ]
+        },
+        "65f16ab5df3eec873ab50bd4": {
+          "type": "buttons",
+          "data": {
+            "name": "Buttons",
+            "buttons": [
+              {
+                "id": "3rq838aa",
+                "name": "Generate an image",
+                "actions": []
+              }
+            ],
+            "intentScope": "GLOBAL",
+            "noMatch": {
+              "types": [],
+              "pathName": "No match",
+              "randomize": false,
+              "reprompts": []
+            },
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "else": {
+                  "type": "else",
+                  "target": null,
+                  "id": "65f16ab5df3eec873ab50bd6"
+                }
+              },
+              "dynamic": [
+                {
+                  "type": "",
+                  "target": "65f1218fee7bde64237af311",
+                  "id": "65f16ab5df3eec873ab50bd5",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          1221.25,
+                          2480.95
+                        ]
+                      },
+                      {
+                        "point": [
+                          1645.94,
+                          2480.77
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          "nodeID": "65f16ab5df3eec873ab50bd4",
+          "coords": [
+            0,
+            0
+          ]
+        },
+        "65f16ab5df3eec873ab50bd7": {
+          "type": "block",
+          "data": {
+            "name": "New Block 17",
+            "steps": [
+              "65f16ab5df3eec873ab50bd4"
+            ]
+          },
+          "nodeID": "65f16ab5df3eec873ab50bd7",
+          "coords": [
+            1055.2496738433838,
+            2401.7032146453857
+          ]
+        },
+        "65f17c237b614b7d39e81716": {
+          "type": "text",
+          "data": {
+            "name": "Text",
+            "texts": [
+              {
+                "id": "ofin38o1",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": "It was a pleasure assisting you with NFTs, looking forward to create more personalized tokens for you!"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "9lk338ib",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": "I'm glad I could help you with NFTs, excited to craft more tailored tokens for you!"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "9lk438io",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": "It was fantastic to aid you with NFTs, eager to produce more bespoke tokens for you!"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "canvasVisibility": "preview",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "65f17c237b614b7d39e81717",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          4260.12,
+                          3211.24
+                        ]
+                      },
+                      {
+                        "point": [
+                          4330.49,
+                          3211.24
+                        ]
+                      },
+                      {
+                        "point": [
+                          4330.49,
+                          3283.08
+                        ]
+                      },
+                      {
+                        "point": [
+                          4400.85,
+                          3283.08
+                        ],
+                        "allowedToTop": false
+                      }
+                    ]
+                  }
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "65f17c237b614b7d39e81716"
+        },
+        "65f17c237b614b7d39e81718": {
+          "type": "block",
+          "data": {
+            "name": "Ending",
+            "steps": [
+              "65f17c237b614b7d39e81716"
+            ],
+            "color": ""
+          },
+          "nodeID": "65f17c237b614b7d39e81718",
+          "coords": [
+            4094.121105194092,
+            3084.2358541488647
+          ]
+        },
+        "65f17d757b614b7d39e8172d": {
+          "type": "command",
+          "data": {
+            "name": "Deprecated Block",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "65f17d757b614b7d39e8172d"
+        }
+      },
+      "offsetX": 480.74148943000904,
+      "offsetY": -67.7655847500912,
+      "modified": 1683845648,
+      "creatorID": 914692,
+      "variables": [],
+      "menuItems": [
+        {
+          "type": "NODE",
+          "sourceID": "start00000000000000000000"
+        }
+      ],
+      "menuNodeIDs": [],
+      "intentStepIDs": [],
+      "_id": "65f079060bc14fa0a78c2c51",
+      "diagramID": "645d72103c0ff6475d60535e",
+      "versionID": "65f079060bc14fa0a78c2c50"
+    }
+  },
+  "flows": [],
+  "entities": [
+    {
+      "id": "65f09efc1c55855d4fdae7c0",
+      "name": "Text_Prompt_for_Image",
+      "createdByID": 914718,
+      "folderID": null,
+      "description": null,
+      "color": "#515A63",
+      "classifier": "VF.NAME",
+      "isArray": false,
+      "createdAt": "2024-03-12T18:29:17.000Z",
+      "updatedAt": "2024-03-12T18:29:17.000Z",
+      "updatedByID": 914718
+    },
+    {
+      "id": "65f08a881c55855d4fdae6c7",
+      "name": "Wallet_Address",
+      "createdByID": 914718,
+      "folderID": null,
+      "description": null,
+      "color": "#5B9FD7",
+      "classifier": "VF.KEY_PHRASE",
+      "isArray": false,
+      "createdAt": "2024-03-12T17:02:01.000Z",
+      "updatedAt": "2024-03-12T17:02:01.000Z",
+      "updatedByID": 914718
+    },
+    {
+      "id": "65f08d37e3d2189a452986e7",
+      "name": "NFT_Creation",
+      "createdByID": 914692,
+      "folderID": null,
+      "description": null,
+      "color": "#56B365",
+      "classifier": "VF.NAME",
+      "isArray": false,
+      "createdAt": "2024-03-12T17:13:28.000Z",
+      "updatedAt": "2024-03-12T17:13:28.000Z",
+      "updatedByID": 914692
+    },
+    {
+      "id": "65f090b11c55855d4fdae6dc",
+      "name": "NFT_Name",
+      "createdByID": 914718,
+      "folderID": null,
+      "description": null,
+      "color": "#CB627B",
+      "classifier": "VF.NAME",
+      "isArray": false,
+      "createdAt": "2024-03-12T17:28:18.000Z",
+      "updatedAt": "2024-03-12T17:28:18.000Z",
+      "updatedByID": 914718
+    },
+    {
+      "id": "65f112f705692a7e68880105",
+      "name": "Final_Image",
+      "createdByID": 914718,
+      "folderID": null,
+      "description": null,
+      "color": "#56B365",
+      "classifier": "VF.CURRENCY",
+      "isArray": false,
+      "createdAt": "2024-03-13T02:44:08.000Z",
+      "updatedAt": "2024-03-13T02:44:08.000Z",
+      "updatedByID": 914718
+    },
+    {
+      "id": "65f0884b1c55855d4fdae6a4",
+      "name": "Name",
+      "createdByID": 914718,
+      "folderID": null,
+      "description": null,
+      "color": "#5B9FD7",
+      "classifier": "Custom",
+      "isArray": false,
+      "createdAt": "2024-03-12T16:52:27.000Z",
+      "updatedAt": "2024-03-13T05:09:26.000Z",
+      "updatedByID": 914692
+    },
+    {
+      "id": "65f0926b1c55855d4fdae6e1",
+      "name": "NFT_Description",
+      "createdByID": 914718,
+      "folderID": null,
+      "description": null,
+      "color": "#5B9FD7",
+      "classifier": "VF.KEY_PHRASE",
+      "isArray": false,
+      "createdAt": "2024-03-12T17:35:39.000Z",
+      "updatedAt": "2024-03-12T17:35:39.000Z",
+      "updatedByID": 914718
+    },
+    {
+      "id": "65f096661c55855d4fdae722",
+      "name": "NFT_Creation_Exist",
+      "createdByID": 914718,
+      "folderID": null,
+      "description": null,
+      "color": "#515A63",
+      "classifier": "VF.KEY_PHRASE",
+      "isArray": false,
+      "createdAt": "2024-03-12T17:52:38.000Z",
+      "updatedAt": "2024-03-12T17:52:38.000Z",
+      "updatedByID": 914718
+    }
+  ],
+  "entityVariants": [
+    {
+      "id": "65f1348bfe4048bdfc9363fc",
+      "language": "en-us",
+      "value": "Emily",
+      "entityID": "65f0884b1c55855d4fdae6a4",
+      "synonyms": [
+        "Em",
+        "Emma",
+        "Emilia"
+      ],
+      "createdAt": "2024-03-13T05:07:23.000Z"
+    }
+  ],
+  "intents": [
+    {
+      "id": "bzga3j4q",
+      "name": "Learn Button",
+      "createdByID": 914692,
+      "folderID": null,
+      "description": null,
+      "automaticReprompt": false,
+      "entityOrder": [],
+      "createdAt": "2024-03-12T15:47:20.000Z",
+      "updatedAt": "2024-03-12T15:47:20.000Z",
+      "updatedByID": 914692
+    },
+    {
+      "id": "psac3o99",
+      "name": "Jump Here",
+      "createdByID": 914692,
+      "folderID": null,
+      "description": null,
+      "automaticReprompt": false,
+      "entityOrder": [],
+      "createdAt": "2024-03-12T15:47:20.000Z",
+      "updatedAt": "2024-03-12T15:47:20.000Z",
+      "updatedByID": 914692
+    },
+    {
+      "id": "582pg3mye",
+      "name": "Learn Intents",
+      "createdByID": 914692,
+      "folderID": null,
+      "description": null,
+      "automaticReprompt": false,
+      "entityOrder": [],
+      "createdAt": "2024-03-12T15:47:20.000Z",
+      "updatedAt": "2024-03-12T15:47:20.000Z",
+      "updatedByID": 914692
+    },
+    {
+      "id": "z8cn3985",
+      "name": "Tell me more",
+      "createdByID": 914692,
+      "folderID": null,
+      "description": null,
+      "automaticReprompt": false,
+      "entityOrder": [],
+      "createdAt": "2024-03-12T15:47:20.000Z",
+      "updatedAt": "2024-03-12T15:47:20.000Z",
+      "updatedByID": 914692
+    },
+    {
+      "id": "a5uo39mw",
+      "name": "Launch Assistant",
+      "createdByID": 914692,
+      "folderID": null,
+      "description": null,
+      "automaticReprompt": false,
+      "entityOrder": [],
+      "createdAt": "2024-03-12T15:47:20.000Z",
+      "updatedAt": "2024-03-12T15:47:20.000Z",
+      "updatedByID": 914692
+    },
+    {
+      "id": "wb5tx3em8",
+      "name": "Response AI",
+      "createdByID": 914692,
+      "folderID": null,
+      "description": null,
+      "automaticReprompt": false,
+      "entityOrder": [],
+      "createdAt": "2024-03-12T15:47:20.000Z",
+      "updatedAt": "2024-03-12T15:47:20.000Z",
+      "updatedByID": 914692
+    },
+    {
+      "id": "re5xb3etn",
+      "name": "Set AI",
+      "createdByID": 914692,
+      "folderID": null,
+      "description": null,
+      "automaticReprompt": false,
+      "entityOrder": [],
+      "createdAt": "2024-03-12T15:47:20.000Z",
+      "updatedAt": "2024-03-12T15:47:20.000Z",
+      "updatedByID": 914692
+    },
+    {
+      "id": "yvj733rd",
+      "name": "Learn Components",
+      "createdByID": 914692,
+      "folderID": null,
+      "description": null,
+      "automaticReprompt": false,
+      "entityOrder": [],
+      "createdAt": "2024-03-12T15:47:20.000Z",
+      "updatedAt": "2024-03-12T15:47:20.000Z",
+      "updatedByID": 914692
+    },
+    {
+      "id": "kvlc336b",
+      "name": "Learn Actions",
+      "createdByID": 914692,
+      "folderID": null,
+      "description": null,
+      "automaticReprompt": false,
+      "entityOrder": [],
+      "createdAt": "2024-03-12T15:47:20.000Z",
+      "updatedAt": "2024-03-12T15:47:20.000Z",
+      "updatedByID": 914692
+    },
+    {
+      "id": "sjcrv374u",
+      "name": "ChatGPT",
+      "createdByID": 914692,
+      "folderID": null,
+      "description": null,
+      "automaticReprompt": false,
+      "entityOrder": [],
+      "createdAt": "2024-03-12T15:47:20.000Z",
+      "updatedAt": "2024-03-12T15:47:20.000Z",
+      "updatedByID": 914692
+    },
+    {
+      "id": "oag9e37z2",
+      "name": "Learn the basics",
+      "createdByID": 914692,
+      "folderID": null,
+      "description": null,
+      "automaticReprompt": false,
+      "entityOrder": [],
+      "createdAt": "2024-03-12T15:47:20.000Z",
+      "updatedAt": "2024-03-12T15:47:20.000Z",
+      "updatedByID": 914692
+    },
+    {
+      "id": "6579c6bf984565862f64b783",
+      "name": "Yes",
+      "createdByID": 914692,
+      "folderID": null,
+      "description": null,
+      "automaticReprompt": false,
+      "entityOrder": [],
+      "createdAt": "2024-03-12T15:47:20.000Z",
+      "updatedAt": "2024-03-12T15:47:20.000Z",
+      "updatedByID": 914692
+    },
+    {
+      "id": "6579c778dd3cca0fe0e0b152",
+      "name": "No",
+      "createdByID": 914692,
+      "folderID": null,
+      "description": null,
+      "automaticReprompt": false,
+      "entityOrder": [],
+      "createdAt": "2024-03-12T15:47:20.000Z",
+      "updatedAt": "2024-03-12T15:47:20.000Z",
+      "updatedByID": 914692
+    },
+    {
+      "id": "None",
+      "name": "None",
+      "createdByID": 914692,
+      "folderID": null,
+      "description": null,
+      "automaticReprompt": false,
+      "entityOrder": [],
+      "createdAt": "2024-03-12T15:47:20.000Z",
+      "updatedAt": "2024-03-12T15:47:20.000Z",
+      "updatedByID": 914692
+    }
+  ],
+  "utterances": [
+    {
+      "id": "65f079072c95130007bbea78",
+      "text": [
+        {
+          "text": [
+            "how do I add a choice to the canvas"
+          ]
+        }
+      ],
+      "intentID": "bzga3j4q",
+      "language": "en-us",
+      "createdAt": "2024-03-12T15:47:20.000Z"
+    },
+    {
+      "id": "65f079072c95130007bbea79",
+      "text": [
+        {
+          "text": [
+            "how do I use the buttons step"
+          ]
+        }
+      ],
+      "intentID": "bzga3j4q",
+      "language": "en-us",
+      "createdAt": "2024-03-12T15:47:20.000Z"
+    },
+    {
+      "id": "65f079072c95130007bbea7a",
+      "text": [
+        {
+          "text": [
+            "buttons step help"
+          ]
+        }
+      ],
+      "intentID": "bzga3j4q",
+      "language": "en-us",
+      "createdAt": "2024-03-12T15:47:20.000Z"
+    },
+    {
+      "id": "65f079072c95130007bbea7b",
+      "text": [
+        {
+          "text": [
+            "how to use choice"
+          ]
+        }
+      ],
+      "intentID": "bzga3j4q",
+      "language": "en-us",
+      "createdAt": "2024-03-12T15:47:20.000Z"
+    },
+    {
+      "id": "65f079072c95130007bbea7c",
+      "text": [
+        {
+          "text": [
+            "how do I give the user a choice"
+          ]
+        }
+      ],
+      "intentID": "bzga3j4q",
+      "language": "en-us",
+      "createdAt": "2024-03-12T15:47:20.000Z"
+    },
+    {
+      "id": "65f079072c95130007bbea7d",
+      "text": [
+        {
+          "text": [
+            "how to use button"
+          ]
+        }
+      ],
+      "intentID": "bzga3j4q",
+      "language": "en-us",
+      "createdAt": "2024-03-12T15:47:20.000Z"
+    },
+    {
+      "id": "65f079072c95130007bbea7e",
+      "text": [
+        {
+          "text": [
+            "jump here"
+          ]
+        }
+      ],
+      "intentID": "psac3o99",
+      "language": "en-us",
+      "createdAt": "2024-03-12T15:47:20.000Z"
+    },
+    {
+      "id": "65f079072c95130007bbea7f",
+      "text": [
+        {
+          "text": [
+            "jump there please"
+          ]
+        }
+      ],
+      "intentID": "psac3o99",
+      "language": "en-us",
+      "createdAt": "2024-03-12T15:47:20.000Z"
+    },
+    {
+      "id": "65f079072c95130007bbea80",
+      "text": [
+        {
+          "text": [
+            "jump intent"
+          ]
+        }
+      ],
+      "intentID": "psac3o99",
+      "language": "en-us",
+      "createdAt": "2024-03-12T15:47:20.000Z"
+    },
+    {
+      "id": "65f079072c95130007bbea81",
+      "text": [
+        {
+          "text": [
+            "jump there"
+          ]
+        }
+      ],
+      "intentID": "psac3o99",
+      "language": "en-us",
+      "createdAt": "2024-03-12T15:47:20.000Z"
+    },
+    {
+      "id": "65f079072c95130007bbea82",
+      "text": [
+        {
+          "text": [
+            "jump"
+          ]
+        }
+      ],
+      "intentID": "psac3o99",
+      "language": "en-us",
+      "createdAt": "2024-03-12T15:47:20.000Z"
+    },
+    {
+      "id": "65f079072c95130007bbea83",
+      "text": [
+        {
+          "text": [
+            "learn about intents please"
+          ]
+        }
+      ],
+      "intentID": "582pg3mye",
+      "language": "en-us",
+      "createdAt": "2024-03-12T15:47:20.000Z"
+    },
+    {
+      "id": "65f079072c95130007bbea84",
+      "text": [
+        {
+          "text": [
+            "i want to learn about intents"
+          ]
+        }
+      ],
+      "intentID": "582pg3mye",
+      "language": "en-us",
+      "createdAt": "2024-03-12T15:47:20.000Z"
+    },
+    {
+      "id": "65f079072c95130007bbea85",
+      "text": [
+        {
+          "text": [
+            "intent learn"
+          ]
+        }
+      ],
+      "intentID": "582pg3mye",
+      "language": "en-us",
+      "createdAt": "2024-03-12T15:47:20.000Z"
+    },
+    {
+      "id": "65f079072c95130007bbea86",
+      "text": [
+        {
+          "text": [
+            "intents learn"
+          ]
+        }
+      ],
+      "intentID": "582pg3mye",
+      "language": "en-us",
+      "createdAt": "2024-03-12T15:47:20.000Z"
+    },
+    {
+      "id": "65f079072c95130007bbea87",
+      "text": [
+        {
+          "text": [
+            "learn intents"
+          ]
+        }
+      ],
+      "intentID": "582pg3mye",
+      "language": "en-us",
+      "createdAt": "2024-03-12T15:47:20.000Z"
+    },
+    {
+      "id": "65f079072c95130007bbea88",
+      "text": [
+        {
+          "text": [
+            "What else can you tell me?"
+          ]
+        }
+      ],
+      "intentID": "z8cn3985",
+      "language": "en-us",
+      "createdAt": "2024-03-12T15:47:20.000Z"
+    },
+    {
+      "id": "65f079072c95130007bbea89",
+      "text": [
+        {
+          "text": [
+            "Can you give me more information?"
+          ]
+        }
+      ],
+      "intentID": "z8cn3985",
+      "language": "en-us",
+      "createdAt": "2024-03-12T15:47:20.000Z"
+    },
+    {
+      "id": "65f079072c95130007bbea8a",
+      "text": [
+        {
+          "text": [
+            "Do you have anything else to add?"
+          ]
+        }
+      ],
+      "intentID": "z8cn3985",
+      "language": "en-us",
+      "createdAt": "2024-03-12T15:47:20.000Z"
+    },
+    {
+      "id": "65f079072c95130007bbea8b",
+      "text": [
+        {
+          "text": [
+            "What else do you know?"
+          ]
+        }
+      ],
+      "intentID": "z8cn3985",
+      "language": "en-us",
+      "createdAt": "2024-03-12T15:47:20.000Z"
+    },
+    {
+      "id": "65f079072c95130007bbea8c",
+      "text": [
+        {
+          "text": [
+            "Go on."
+          ]
+        }
+      ],
+      "intentID": "z8cn3985",
+      "language": "en-us",
+      "createdAt": "2024-03-12T15:47:20.000Z"
+    },
+    {
+      "id": "65f079072c95130007bbea8d",
+      "text": [
+        {
+          "text": [
+            "Launch my assistant"
+          ]
+        }
+      ],
+      "intentID": "a5uo39mw",
+      "language": "en-us",
+      "createdAt": "2024-03-12T15:47:20.000Z"
+    },
+    {
+      "id": "65f079072c95130007bbea8e",
+      "text": [
+        {
+          "text": [
+            "connect assistant to website"
+          ]
+        }
+      ],
+      "intentID": "a5uo39mw",
+      "language": "en-us",
+      "createdAt": "2024-03-12T15:47:20.000Z"
+    },
+    {
+      "id": "65f079072c95130007bbea8f",
+      "text": [
+        {
+          "text": [
+            "launch assistant"
+          ]
+        }
+      ],
+      "intentID": "a5uo39mw",
+      "language": "en-us",
+      "createdAt": "2024-03-12T15:47:20.000Z"
+    },
+    {
+      "id": "65f079072c95130007bbea90",
+      "text": [
+        {
+          "text": [
+            "put assistant on website"
+          ]
+        }
+      ],
+      "intentID": "a5uo39mw",
+      "language": "en-us",
+      "createdAt": "2024-03-12T15:47:20.000Z"
+    },
+    {
+      "id": "65f079072c95130007bbea91",
+      "text": [
+        {
+          "text": [
+            "gpt response"
+          ]
+        }
+      ],
+      "intentID": "wb5tx3em8",
+      "language": "en-us",
+      "createdAt": "2024-03-12T15:47:20.000Z"
+    },
+    {
+      "id": "65f079072c95130007bbea92",
+      "text": [
+        {
+          "text": [
+            "new response step"
+          ]
+        }
+      ],
+      "intentID": "wb5tx3em8",
+      "language": "en-us",
+      "createdAt": "2024-03-12T15:47:20.000Z"
+    },
+    {
+      "id": "65f079072c95130007bbea93",
+      "text": [
+        {
+          "text": [
+            "response ai"
+          ]
+        }
+      ],
+      "intentID": "wb5tx3em8",
+      "language": "en-us",
+      "createdAt": "2024-03-12T15:47:20.000Z"
+    },
+    {
+      "id": "65f079072c95130007bbea94",
+      "text": [
+        {
+          "text": [
+            "response"
+          ]
+        }
+      ],
+      "intentID": "wb5tx3em8",
+      "language": "en-us",
+      "createdAt": "2024-03-12T15:47:20.000Z"
+    },
+    {
+      "id": "65f079072c95130007bbea95",
+      "text": [
+        {
+          "text": [
+            "GPT set"
+          ]
+        }
+      ],
+      "intentID": "re5xb3etn",
+      "language": "en-us",
+      "createdAt": "2024-03-12T15:47:20.000Z"
+    },
+    {
+      "id": "65f079072c95130007bbea96",
+      "text": [
+        {
+          "text": [
+            "set step"
+          ]
+        }
+      ],
+      "intentID": "re5xb3etn",
+      "language": "en-us",
+      "createdAt": "2024-03-12T15:47:20.000Z"
+    },
+    {
+      "id": "65f079072c95130007bbea97",
+      "text": [
+        {
+          "text": [
+            "set ai"
+          ]
+        }
+      ],
+      "intentID": "re5xb3etn",
+      "language": "en-us",
+      "createdAt": "2024-03-12T15:47:20.000Z"
+    },
+    {
+      "id": "65f079072c95130007bbea98",
+      "text": [
+        {
+          "text": [
+            "set"
+          ]
+        }
+      ],
+      "intentID": "re5xb3etn",
+      "language": "en-us",
+      "createdAt": "2024-03-12T15:47:20.000Z"
+    },
+    {
+      "id": "65f079072c95130007bbea99",
+      "text": [
+        {
+          "text": [
+            "Learn components"
+          ]
+        }
+      ],
+      "intentID": "yvj733rd",
+      "language": "en-us",
+      "createdAt": "2024-03-12T15:47:20.000Z"
+    },
+    {
+      "id": "65f079072c95130007bbea9a",
+      "text": [
+        {
+          "text": [
+            "What components can I learn?"
+          ]
+        }
+      ],
+      "intentID": "yvj733rd",
+      "language": "en-us",
+      "createdAt": "2024-03-12T15:47:20.000Z"
+    },
+    {
+      "id": "65f079072c95130007bbea9b",
+      "text": [
+        {
+          "text": [
+            "What components do I need to know?"
+          ]
+        }
+      ],
+      "intentID": "yvj733rd",
+      "language": "en-us",
+      "createdAt": "2024-03-12T15:47:20.000Z"
+    },
+    {
+      "id": "65f079072c95130007bbea9c",
+      "text": [
+        {
+          "text": [
+            "Teach me about components"
+          ]
+        }
+      ],
+      "intentID": "yvj733rd",
+      "language": "en-us",
+      "createdAt": "2024-03-12T15:47:20.000Z"
+    },
+    {
+      "id": "65f079072c95130007bbea9d",
+      "text": [
+        {
+          "text": [
+            "Show me components"
+          ]
+        }
+      ],
+      "intentID": "yvj733rd",
+      "language": "en-us",
+      "createdAt": "2024-03-12T15:47:20.000Z"
+    },
+    {
+      "id": "65f079072c95130007bbea9e",
+      "text": [
+        {
+          "text": [
+            "Tell me about components"
+          ]
+        }
+      ],
+      "intentID": "yvj733rd",
+      "language": "en-us",
+      "createdAt": "2024-03-12T15:47:20.000Z"
+    },
+    {
+      "id": "65f079072c95130007bbea9f",
+      "text": [
+        {
+          "text": [
+            "Learn Actions"
+          ]
+        }
+      ],
+      "intentID": "kvlc336b",
+      "language": "en-us",
+      "createdAt": "2024-03-12T15:47:20.000Z"
+    },
+    {
+      "id": "65f079072c95130007bbeaa0",
+      "text": [
+        {
+          "text": [
+            "What Actions Can I Learn"
+          ]
+        }
+      ],
+      "intentID": "kvlc336b",
+      "language": "en-us",
+      "createdAt": "2024-03-12T15:47:20.000Z"
+    },
+    {
+      "id": "65f079072c95130007bbeaa1",
+      "text": [
+        {
+          "text": [
+            "How Do I Learn Actions"
+          ]
+        }
+      ],
+      "intentID": "kvlc336b",
+      "language": "en-us",
+      "createdAt": "2024-03-12T15:47:20.000Z"
+    },
+    {
+      "id": "65f079072c95130007bbeaa2",
+      "text": [
+        {
+          "text": [
+            "Teach me about Actions"
+          ]
+        }
+      ],
+      "intentID": "kvlc336b",
+      "language": "en-us",
+      "createdAt": "2024-03-12T15:47:20.000Z"
+    },
+    {
+      "id": "65f079072c95130007bbeaa3",
+      "text": [
+        {
+          "text": [
+            "What Can I Do with Actions"
+          ]
+        }
+      ],
+      "intentID": "kvlc336b",
+      "language": "en-us",
+      "createdAt": "2024-03-12T15:47:20.000Z"
+    },
+    {
+      "id": "65f079072c95130007bbeaa4",
+      "text": [
+        {
+          "text": [
+            "Show me How to Work with Actions"
+          ]
+        }
+      ],
+      "intentID": "kvlc336b",
+      "language": "en-us",
+      "createdAt": "2024-03-12T15:47:20.000Z"
+    },
+    {
+      "id": "65f079072c95130007bbeaa5",
+      "text": [
+        {
+          "text": [
+            "how do i use AI in my assistant"
+          ]
+        }
+      ],
+      "intentID": "sjcrv374u",
+      "language": "en-us",
+      "createdAt": "2024-03-12T15:47:20.000Z"
+    },
+    {
+      "id": "65f079072c95130007bbeaa6",
+      "text": [
+        {
+          "text": [
+            "how do i use gpt in my assistant"
+          ]
+        }
+      ],
+      "intentID": "sjcrv374u",
+      "language": "en-us",
+      "createdAt": "2024-03-12T15:47:20.000Z"
+    },
+    {
+      "id": "65f079072c95130007bbeaa7",
+      "text": [
+        {
+          "text": [
+            "How do I use chatgpt in my assistant"
+          ]
+        }
+      ],
+      "intentID": "sjcrv374u",
+      "language": "en-us",
+      "createdAt": "2024-03-12T15:47:20.000Z"
+    },
+    {
+      "id": "65f079072c95130007bbeaa8",
+      "text": [
+        {
+          "text": [
+            "how do I use AI in my assistant?"
+          ]
+        }
+      ],
+      "intentID": "sjcrv374u",
+      "language": "en-us",
+      "createdAt": "2024-03-12T15:47:20.000Z"
+    },
+    {
+      "id": "65f079072c95130007bbeaa9",
+      "text": [
+        {
+          "text": [
+            "how do I use GPT in my assistant?"
+          ]
+        }
+      ],
+      "intentID": "sjcrv374u",
+      "language": "en-us",
+      "createdAt": "2024-03-12T15:47:20.000Z"
+    },
+    {
+      "id": "65f079072c95130007bbeaaa",
+      "text": [
+        {
+          "text": [
+            "How do I use ChatGPT in my assistant?"
+          ]
+        }
+      ],
+      "intentID": "sjcrv374u",
+      "language": "en-us",
+      "createdAt": "2024-03-12T15:47:20.000Z"
+    },
+    {
+      "id": "65f079072c95130007bbeaab",
+      "text": [
+        {
+          "text": [
+            "What is the quickest way to incorporate AI in my assistant?"
+          ]
+        }
+      ],
+      "intentID": "sjcrv374u",
+      "language": "en-us",
+      "createdAt": "2024-03-12T15:47:20.000Z"
+    },
+    {
+      "id": "65f079072c95130007bbeaac",
+      "text": [
+        {
+          "text": [
+            "What is the best way to use GPT in my assistant?"
+          ]
+        }
+      ],
+      "intentID": "sjcrv374u",
+      "language": "en-us",
+      "createdAt": "2024-03-12T15:47:20.000Z"
+    },
+    {
+      "id": "65f079072c95130007bbeaad",
+      "text": [
+        {
+          "text": [
+            "Teach me the basics"
+          ]
+        }
+      ],
+      "intentID": "oag9e37z2",
+      "language": "en-us",
+      "createdAt": "2024-03-12T15:47:20.000Z"
+    },
+    {
+      "id": "65f079072c95130007bbeaae",
+      "text": [
+        {
+          "text": [
+            "I want to learn the basics"
+          ]
+        }
+      ],
+      "intentID": "oag9e37z2",
+      "language": "en-us",
+      "createdAt": "2024-03-12T15:47:20.000Z"
+    },
+    {
+      "id": "65f079072c95130007bbeaaf",
+      "text": [
+        {
+          "text": [
+            "learn the basics"
+          ]
+        }
+      ],
+      "intentID": "oag9e37z2",
+      "language": "en-us",
+      "createdAt": "2024-03-12T15:47:20.000Z"
+    },
+    {
+      "id": "65f079072c95130007bbeab0",
+      "text": [
+        {
+          "text": [
+            "sure"
+          ]
+        }
+      ],
+      "intentID": "6579c6bf984565862f64b783",
+      "language": "en-us",
+      "createdAt": "2024-03-12T15:47:20.000Z"
+    },
+    {
+      "id": "65f079072c95130007bbeab1",
+      "text": [
+        {
+          "text": [
+            "certainly"
+          ]
+        }
+      ],
+      "intentID": "6579c6bf984565862f64b783",
+      "language": "en-us",
+      "createdAt": "2024-03-12T15:47:20.000Z"
+    },
+    {
+      "id": "65f079072c95130007bbeab2",
+      "text": [
+        {
+          "text": [
+            "affirmative"
+          ]
+        }
+      ],
+      "intentID": "6579c6bf984565862f64b783",
+      "language": "en-us",
+      "createdAt": "2024-03-12T15:47:20.000Z"
+    },
+    {
+      "id": "65f079072c95130007bbeab3",
+      "text": [
+        {
+          "text": [
+            "okay"
+          ]
+        }
+      ],
+      "intentID": "6579c6bf984565862f64b783",
+      "language": "en-us",
+      "createdAt": "2024-03-12T15:47:20.000Z"
+    },
+    {
+      "id": "65f079072c95130007bbeab4",
+      "text": [
+        {
+          "text": [
+            "ok"
+          ]
+        }
+      ],
+      "intentID": "6579c6bf984565862f64b783",
+      "language": "en-us",
+      "createdAt": "2024-03-12T15:47:20.000Z"
+    },
+    {
+      "id": "65f079072c95130007bbeab5",
+      "text": [
+        {
+          "text": [
+            "ya"
+          ]
+        }
+      ],
+      "intentID": "6579c6bf984565862f64b783",
+      "language": "en-us",
+      "createdAt": "2024-03-12T15:47:20.000Z"
+    },
+    {
+      "id": "65f079072c95130007bbeab6",
+      "text": [
+        {
+          "text": [
+            "yep"
+          ]
+        }
+      ],
+      "intentID": "6579c6bf984565862f64b783",
+      "language": "en-us",
+      "createdAt": "2024-03-12T15:47:20.000Z"
+    },
+    {
+      "id": "65f079072c95130007bbeab7",
+      "text": [
+        {
+          "text": [
+            "yup"
+          ]
+        }
+      ],
+      "intentID": "6579c6bf984565862f64b783",
+      "language": "en-us",
+      "createdAt": "2024-03-12T15:47:20.000Z"
+    },
+    {
+      "id": "65f079072c95130007bbeab8",
+      "text": [
+        {
+          "text": [
+            "yea"
+          ]
+        }
+      ],
+      "intentID": "6579c6bf984565862f64b783",
+      "language": "en-us",
+      "createdAt": "2024-03-12T15:47:20.000Z"
+    },
+    {
+      "id": "65f079072c95130007bbeab9",
+      "text": [
+        {
+          "text": [
+            "yes"
+          ]
+        }
+      ],
+      "intentID": "6579c6bf984565862f64b783",
+      "language": "en-us",
+      "createdAt": "2024-03-12T15:47:20.000Z"
+    },
+    {
+      "id": "65f079072c95130007bbeaba",
+      "text": [
+        {
+          "text": [
+            "negative"
+          ]
+        }
+      ],
+      "intentID": "6579c778dd3cca0fe0e0b152",
+      "language": "en-us",
+      "createdAt": "2024-03-12T15:47:20.000Z"
+    },
+    {
+      "id": "65f079072c95130007bbeabb",
+      "text": [
+        {
+          "text": [
+            "nevermind"
+          ]
+        }
+      ],
+      "intentID": "6579c778dd3cca0fe0e0b152",
+      "language": "en-us",
+      "createdAt": "2024-03-12T15:47:20.000Z"
+    },
+    {
+      "id": "65f079072c95130007bbeabc",
+      "text": [
+        {
+          "text": [
+            "not"
+          ]
+        }
+      ],
+      "intentID": "6579c778dd3cca0fe0e0b152",
+      "language": "en-us",
+      "createdAt": "2024-03-12T15:47:20.000Z"
+    },
+    {
+      "id": "65f079072c95130007bbeabd",
+      "text": [
+        {
+          "text": [
+            "no thanks"
+          ]
+        }
+      ],
+      "intentID": "6579c778dd3cca0fe0e0b152",
+      "language": "en-us",
+      "createdAt": "2024-03-12T15:47:20.000Z"
+    },
+    {
+      "id": "65f079072c95130007bbeabe",
+      "text": [
+        {
+          "text": [
+            "no way"
+          ]
+        }
+      ],
+      "intentID": "6579c778dd3cca0fe0e0b152",
+      "language": "en-us",
+      "createdAt": "2024-03-12T15:47:20.000Z"
+    },
+    {
+      "id": "65f079072c95130007bbeabf",
+      "text": [
+        {
+          "text": [
+            "not now"
+          ]
+        }
+      ],
+      "intentID": "6579c778dd3cca0fe0e0b152",
+      "language": "en-us",
+      "createdAt": "2024-03-12T15:47:20.000Z"
+    },
+    {
+      "id": "65f079072c95130007bbeac0",
+      "text": [
+        {
+          "text": [
+            "nah"
+          ]
+        }
+      ],
+      "intentID": "6579c778dd3cca0fe0e0b152",
+      "language": "en-us",
+      "createdAt": "2024-03-12T15:47:20.000Z"
+    },
+    {
+      "id": "65f079072c95130007bbeac1",
+      "text": [
+        {
+          "text": [
+            "nay"
+          ]
+        }
+      ],
+      "intentID": "6579c778dd3cca0fe0e0b152",
+      "language": "en-us",
+      "createdAt": "2024-03-12T15:47:20.000Z"
+    },
+    {
+      "id": "65f079072c95130007bbeac2",
+      "text": [
+        {
+          "text": [
+            "nope"
+          ]
+        }
+      ],
+      "intentID": "6579c778dd3cca0fe0e0b152",
+      "language": "en-us",
+      "createdAt": "2024-03-12T15:47:20.000Z"
+    },
+    {
+      "id": "65f079072c95130007bbeac3",
+      "text": [
+        {
+          "text": [
+            "no"
+          ]
+        }
+      ],
+      "intentID": "6579c778dd3cca0fe0e0b152",
+      "language": "en-us",
+      "createdAt": "2024-03-12T15:47:20.000Z"
+    }
+  ],
+  "requiredEntities": [],
+  "folders": [],
+  "responses": [],
+  "responseVariants": [],
+  "responseAttachments": [],
+  "responseDiscriminators": [],
+  "variables": [
+    {
+      "id": "65f119bffe4048bdfc9363af",
+      "name": "Nvidia_SDXL_API",
+      "createdByID": 914692,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": false,
+      "datatype": "any",
+      "description": "",
+      "defaultValue": null,
+      "createdAt": "2024-03-13T03:13:03.000Z",
+      "updatedAt": "2024-03-13T03:13:03.000Z",
+      "updatedByID": 914692
+    },
+    {
+      "id": "65f121f3fe4048bdfc9363b3",
+      "name": "ImageType",
+      "createdByID": 914692,
+      "folderID": null,
+      "color": "#5B9FD7",
+      "isArray": false,
+      "isSystem": false,
+      "datatype": "any",
+      "description": "",
+      "defaultValue": null,
+      "createdAt": "2024-03-13T03:48:03.000Z",
+      "updatedAt": "2024-03-13T03:48:03.000Z",
+      "updatedByID": 914692
+    },
+    {
+      "id": "65f11e6cfe4048bdfc9363b2",
+      "name": "nvidia_api_key",
+      "createdByID": 914692,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": false,
+      "datatype": "any",
+      "description": "",
+      "defaultValue": null,
+      "createdAt": "2024-03-13T03:33:00.000Z",
+      "updatedAt": "2024-03-13T03:33:00.000Z",
+      "updatedByID": 914692
+    },
+    {
+      "id": "65f122d9fe4048bdfc9363b4",
+      "name": "Answer",
+      "createdByID": 914692,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": false,
+      "datatype": "any",
+      "description": "",
+      "defaultValue": null,
+      "createdAt": "2024-03-13T03:51:54.000Z",
+      "updatedAt": "2024-03-13T03:51:54.000Z",
+      "updatedByID": 914692
+    },
+    {
+      "id": "sessions",
+      "name": "sessions",
+      "createdByID": 914692,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "number",
+      "description": "The number of times a particular user has opened the app.",
+      "defaultValue": null,
+      "createdAt": "2024-03-12T15:47:20.000Z",
+      "updatedAt": "2024-03-12T15:47:20.000Z",
+      "updatedByID": 914692
+    },
+    {
+      "id": "user_id",
+      "name": "user_id",
+      "createdByID": 914692,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "text",
+      "description": "The user's unique ID.",
+      "defaultValue": null,
+      "createdAt": "2024-03-12T15:47:20.000Z",
+      "updatedAt": "2024-03-12T15:47:20.000Z",
+      "updatedByID": 914692
+    },
+    {
+      "id": "timestamp",
+      "name": "timestamp",
+      "createdByID": 914692,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "text",
+      "description": "UNIX timestamp (number of seconds since January 1st, 1970 at UTC).",
+      "defaultValue": null,
+      "createdAt": "2024-03-12T15:47:20.000Z",
+      "updatedAt": "2024-03-12T15:47:20.000Z",
+      "updatedByID": 914692
+    },
+    {
+      "id": "platform",
+      "name": "platform",
+      "createdByID": 914692,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "text",
+      "description": "The platform your agent is running on (e.g. \"voiceflow\").",
+      "defaultValue": null,
+      "createdAt": "2024-03-12T15:47:20.000Z",
+      "updatedAt": "2024-03-12T15:47:20.000Z",
+      "updatedByID": 914692
+    },
+    {
+      "id": "locale",
+      "name": "locale",
+      "createdByID": 914692,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "text",
+      "description": "The locale of the user (eg. en-US, en-CA, it-IT, fr-FR, ...).",
+      "defaultValue": null,
+      "createdAt": "2024-03-12T15:47:20.000Z",
+      "updatedAt": "2024-03-12T15:47:20.000Z",
+      "updatedByID": 914692
+    },
+    {
+      "id": "counter",
+      "name": "counter",
+      "createdByID": 914692,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": false,
+      "datatype": "any",
+      "description": null,
+      "defaultValue": null,
+      "createdAt": "2024-03-12T15:47:20.000Z",
+      "updatedAt": "2024-03-12T15:47:20.000Z",
+      "updatedByID": 914692
+    },
+    {
+      "id": "sentiment",
+      "name": "sentiment",
+      "createdByID": 914692,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": false,
+      "datatype": "any",
+      "description": null,
+      "defaultValue": null,
+      "createdAt": "2024-03-12T15:47:20.000Z",
+      "updatedAt": "2024-03-12T15:47:20.000Z",
+      "updatedByID": 914692
+    },
+    {
+      "id": "intent_confidence",
+      "name": "intent_confidence",
+      "createdByID": 914692,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "number",
+      "description": "The confidence interval (measured as a value from 0 to 100) for the most recently matched intent.",
+      "defaultValue": null,
+      "createdAt": "2024-03-12T15:47:20.000Z",
+      "updatedAt": "2024-03-12T15:47:20.000Z",
+      "updatedByID": 914692
+    },
+    {
+      "id": "last_response",
+      "name": "last_response",
+      "createdByID": 914692,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "text",
+      "description": "The agent's last response (text/speak) in a string.",
+      "defaultValue": null,
+      "createdAt": "2024-03-12T15:47:20.000Z",
+      "updatedAt": "2024-03-12T15:47:20.000Z",
+      "updatedByID": 914692
+    },
+    {
+      "id": "last_event",
+      "name": "last_event",
+      "createdByID": 914692,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "any",
+      "description": "The object containing the last event that the user client has triggered.",
+      "defaultValue": null,
+      "createdAt": "2024-03-12T15:47:20.000Z",
+      "updatedAt": "2024-03-12T15:47:20.000Z",
+      "updatedByID": 914692
+    },
+    {
+      "id": "last_utterance",
+      "name": "last_utterance",
+      "createdByID": 914692,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "text",
+      "description": "The user's last utterance in a text string.",
+      "defaultValue": null,
+      "createdAt": "2024-03-12T15:47:20.000Z",
+      "updatedAt": "2024-03-12T15:47:20.000Z",
+      "updatedByID": 914692
+    },
+    {
+      "id": "vf_memory",
+      "name": "vf_memory",
+      "createdByID": 914692,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "text",
+      "description": "Last 10 user inputs and agent responses in a string (e.g. \"agent: How can i help?\"\nuser: What's the weather today?).",
+      "defaultValue": null,
+      "createdAt": "2024-03-12T15:47:20.000Z",
+      "updatedAt": "2024-03-12T15:47:20.000Z",
+      "updatedByID": 914692
+    }
+  ],
+  "attachments": [],
+  "cardButtons": [],
+  "functions": [],
+  "functionPaths": [],
+  "functionVariables": [],
+  "project": {
+    "type": "chat",
+    "name": "GenFlow",
+    "image": "https://cm4-production-assets.s3.amazonaws.com/1710314037496-untitled_logo_1_free-file.jpg",
+    "teamID": "ylkpwg0VER",
+    "members": [],
+    "privacy": "private",
+    "platform": "webchat",
+    "_version": 1.2,
+    "linkType": "STRAIGHT",
+    "creatorID": 914692,
+    "updatedBy": 914718,
+    "apiPrivacy": "public",
+    "platformData": {
+      "invocationName": "template project general"
+    },
+    "customThemes": [],
+    "aiAssistSettings": {
+      "aiPlayground": true
+    },
+    "prototype": {
+      "nlp": {
+        "type": "VFNLU"
+      },
+      "lastTrainedTime": 1710320706238,
+      "trainedModel": {
+        "intents": [],
+        "slots": [
+          {
+            "key": "65f112f705692a7e68880105",
+            "name": "Final_Image",
+            "color": "#56B365",
+            "inputs": [],
+            "type": {
+              "value": "VF.CURRENCY"
+            }
+          },
+          {
+            "key": "65f09efc1c55855d4fdae7c0",
+            "name": "Text_Prompt_for_Image",
+            "color": "#515A63",
+            "inputs": [],
+            "type": {
+              "value": "VF.NAME"
+            }
+          },
+          {
+            "key": "65f096661c55855d4fdae722",
+            "name": "NFT_Creation_Exist",
+            "color": "#515A63",
+            "inputs": [],
+            "type": {
+              "value": "VF.KEY_PHRASE"
+            }
+          },
+          {
+            "key": "65f0926b1c55855d4fdae6e1",
+            "name": "NFT_Description",
+            "color": "#5B9FD7",
+            "inputs": [],
+            "type": {
+              "value": "VF.KEY_PHRASE"
+            }
+          },
+          {
+            "key": "65f090b11c55855d4fdae6dc",
+            "name": "NFT_Name",
+            "color": "#CB627B",
+            "inputs": [],
+            "type": {
+              "value": "VF.NAME"
+            }
+          },
+          {
+            "key": "65f08d37e3d2189a452986e7",
+            "name": "NFT_Creation",
+            "color": "#56B365",
+            "inputs": [],
+            "type": {
+              "value": "VF.NAME"
+            }
+          },
+          {
+            "key": "65f08a881c55855d4fdae6c7",
+            "name": "Wallet_Address",
+            "color": "#5B9FD7",
+            "inputs": [],
+            "type": {
+              "value": "VF.KEY_PHRASE"
+            }
+          },
+          {
+            "key": "65f0884b1c55855d4fdae6a4",
+            "name": "Name",
+            "color": "#5B9FD7",
+            "inputs": [
+              "Emily,Em,Emma,Emilia"
+            ],
+            "type": {
+              "value": "Custom"
+            }
+          }
+        ]
+      }
+    },
+    "_id": "65f079060bc14fa0a78c2c4f",
+    "updatedAt": "2024-03-13T10:17:38.510Z",
+    "knowledgeBase": {
+      "settings": {
+        "chunkStrategy": {
+          "type": "recursive_text_splitter",
+          "size": 1200,
+          "overlap": 200
+        },
+        "search": {
+          "limit": 3,
+          "metric": "IP"
+        },
+        "summarization": {
+          "prompt": "",
+          "mode": "prompt",
+          "model": "gpt-3.5-turbo",
+          "temperature": 0.1,
+          "system": "You are an FAQ AI chat assistant. Information will be provided to help answer the user's questions. Always summarize your response to be as brief as possible and be extremely concise. Your responses should be fewer than a couple of sentences."
+        }
+      },
+      "documents": {}
+    },
+    "devVersion": "65f079060bc14fa0a78c2c50",
+    "liveVersion": "65f15250a6a5ec5f0bf40fcc"
+  },
+  "_version": "1.2",
+  "variableStates": []
+}
