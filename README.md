@@ -1,6 +1,6 @@
 # GenChain
 AI-powered NFT Minting and Secure Storage 
-
+ 
 This project integrates Metamask-powered Voiceflow chatbots with React and Tailwind CSS to create an intuitive NFT wallet. Seamlessly manage NFTs across blockchains using chat-based interactions and a visually appealing React web interface. The goal of this innovative solution is to simplify NFT management, empowering users to access portfolios, execute transactions, and engage with the ecosystem effortlessly.
 
 ## What is this project about?
